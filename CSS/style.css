@@ -1,0 +1,70 @@
+/* Section 1  : +header + Nevigation  : Aniket + Himanshu */
+
+
+
+
+
+/*  Section 2  : About + Icons : Aniket + Himanshu   */
+
+
+
+
+
+/* Section 3 : Cards  :  Priyanshu */
+
+
+
+
+
+/* Section 4 : Tournaments : Srashti */
+
+
+
+/* Section 5 : Photo Gallery :  Mradul + Aryan */
+
+
+
+
+/* Section 6 : Growth Section : Vaibhav + Krishna */
+
+
+
+
+/* Section 7 : Player Review : Riya */
+
+
+
+
+
+
+
+
+/* section 8 : Contact  : Santosh  */
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.contact-section-heading {
+    width: auto;
+    padding: 20px 10px 10px;
+    font-weight: 400;
+}
+
+.contact-section-heading span {
+    font-size: 40px;
+    color: #2857a4;
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 0.5rem;
+}
+
+
+
+
+
+
+
