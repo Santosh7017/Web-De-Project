@@ -31,66 +31,53 @@
 
 /* Section 6 : Growth Section : Vaibhav + Krishna */
 
-/* .image-layer {
-    margin: 3%;
-    position: relative;
-} */
-
 .fun-facts-section{
    position: relative;
-   border: 5px solid red;
+   z-index: -1;
+   background: url("/images/banner_new.png") no-repeat center center/cover;
 }
-.fun-facts-section{
-    content: "";
-    background: url("/images/banner.png") no-repeat center center/cover;
-    width: 99%;
-    height: 50%;
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    opacity: 0.65;
-}
-
-
 
 .image-layer{
-    border: 5px solid greenyellow ;
     margin: 0;
     height: 98%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 }
 .image-layer .hello{
-    border: 2px solid red;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
 }
 
 .image-layer .hello .first-txt{
     color: white;
-    font-size: 3rem;
-    font-weight: 100;
-    padding: 0px;
-    margin: 10px 50px 0px 60px;
+    font-size: 50px;
+    padding: 0px 0px 0px 0px;
+    margin: 10px 50px 10px 60px;
+    font-style: italic;
+    font-weight: bold;
+    
 }
 
 .image-layer .hello .second-txt{
-    color: white;
+    color: #ff7600;
     font-size: 3rem;
-    font-weight: 100;
-    /* padding: auto;
-    margin: 20px 60px; */
+    font-size: 20px;
+    margin-bottom: 30px;
 } 
+.material-symbols-outlined.md-80{
+    color: white;
+    font-size: 80px;
+}
 
 .hello{
     display: flex;
     flex-direction: column;
     margin: 50px;
     padding: 0;
+    
 }
 
 
@@ -105,7 +92,7 @@
 
 /* section 8 : Contact  : Santosh  */
 
-/* .contact {
+.contact {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -124,11 +111,4 @@
     display: inline-block;
     padding-top: 10px;
     margin-right: 0.5rem;
-} */
-
-
-
-
-
-
-
+}
