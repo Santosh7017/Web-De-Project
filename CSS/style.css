@@ -1,24 +1,12 @@
 
 
 
-/* body {
-    font-size: 15px;
-    color: #1d1f21;
-    line-height: 1.6em;
-    font-weight: 400;
-    background: #ffffff;
-    -webkit-font-smoothing: antialiased;
-    -moz-font-smoothing: antialiased;
-    font-family: 'Montserrat', sans-serif;
-} */
-
-
-
 *{
     margin: 0;
     padding: 0;
     box-sizing:border-box;
 }
+
 
 /* Section 1  : +header + Nevigation  : Aniket + Himanshu */
 
@@ -75,7 +63,54 @@
 
 /* Section 6 : Growth Section : Vaibhav + Krishna */
 
+.fun-facts-section{
+   position: relative;
+   z-index: -1;
+   background: url("/images/banner_new.png") no-repeat center center/cover;
+}
 
+.image-layer{
+    margin: 0;
+    height: 98%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.image-layer .hello{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-layer .hello .first-txt{
+    color: white;
+    font-size: 50px;
+    padding: 0px 0px 0px 0px;
+    margin: 10px 50px 10px 60px;
+    font-style: italic;
+    font-weight: bold;
+    
+}
+
+.image-layer .hello .second-txt{
+    color: #ff7600;
+    font-size: 3rem;
+    font-size: 20px;
+    margin-bottom: 30px;
+} 
+.material-symbols-outlined.md-80{
+    color: white;
+    font-size: 80px;
+}
+
+.hello{
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    padding: 0;
+    
+}
 
 
 /* Section 7 : Player Review : Riya */
@@ -198,6 +233,15 @@ section .container .contactinfo .sci{
     display: flex;
 }
 
+
+.contact-section-heading span {
+    font-size: 40px;
+    color: #2857a4;
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 0.5rem;
+}
+=======
 section .container .contactinfo .sci li{
    list-style: none;
    margin-right: 40px;
@@ -333,17 +377,11 @@ section .container .contactForm .formBox .inputBox input[type="submit"]:hover{
         box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
     }
    
-    
-
-
-
-    
-
-
 
 
   }
 
    
     
+
 
