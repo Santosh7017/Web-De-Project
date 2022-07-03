@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 /* body {
@@ -12,6 +13,12 @@
 } */
 
 
+=======
+*{
+    margin: 0;
+    padding: 0;
+}
+>>>>>>> cc2ea6886856d52f05cfdea8a5fe6789a8e6588a
 /* Section 1  : +header + Nevigation  : Aniket + Himanshu */
 
 
@@ -35,7 +42,41 @@
 
 
 /* Section 5 : Photo Gallery :  Mradul + Aryan */
-
+.gallery{
+    position: relative;
+}
+.images::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGxcZKdlCn2JE21-beWhO__Zt8q4bTh-24txtl5gRRtkM4GYNZYsJCZoRuUTFlA5uRYpQ&usqp=CAU") no-repeat center center/cover;
+    height: 115%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+.gallery .header h1{
+    font-family: 'Rubik Moonrocks', cursive;
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 70;
+    color: white;
+    text-decoration:underline;
+}
+.pics{
+    margin: 0;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+    align-items: center; 
+}
+.pics .box{ 
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    margin: 5px;
+}
 
 
 
@@ -67,7 +108,7 @@
 *{
     margin: 0;
     padding: 0;
-     box-sizing: border-box;
+     
     
 }
 
