@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+     box-sizing: border-box;
+    
+}
+.sec-4
+{
+    justify-content: center;
+    padding: 0px 15px;
+    margin: 0 auto;
+    display: flex;
+    
+}
+.sec-4-title-div
+{
+    font-family: 'Monstserrat',sans-serif;
+    
+    margin-bottom: 50px;
+    text-align: center !important;
+}
+.sec-4-title-div h2{
+    font-size: 35px;
+    margin-bottom: 15px;
+    
+}
+.sec-4-title-div .subtitle1 {
+    color: #ed6221;
+    text-transform: uppercase;
+    line-height: 3em;
+}
+.text {
+    
+    display: flex;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+    padding: 10%;
+    font-size: 20px;
+    line-height: 1.5em;
+    
+}
+
+hr
+{
+    align-items: center;
+    margin: 0 12.5% ;
+    width: 75%;
+    /* padding: 0 20px ; */
+    /* height: 10px; */
+    border: 3px solid rgb(67, 66, 66);
+    opacity: .5;
+    margin-bottom: 90px;
+    
+    
+}
+
+
+
+
+
+
+
+
+
+/*=============================================================================*/
+.event-image
+{   
+    max-width: 70%;
+    justify-content:center;
+    /* padding: 0 45%; */
+    display: flex;
+}
+
+/* .seperate
+{
+    
+    height: 400px; 
+    display: flex;
+    
+    flex-wrap: wrap;
+    margin: 0;
+} */
+.event-image .game-block
+{
+    margin-top: 80px;
+    /* justify-content: center; */
+    position: absolute;
+    top: 400px;
+    width: 500px;
+    height: calc(100% -30px);
+    /* color: white; */
+    background: rgba(252, 250, 249, 0.99);
+    /* box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 10%); */
+    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2); */
+}
+.titlebox
+{
+    position: relative;
+    display: block;
+    color: black;
+    /* margin-left: 140px; */
+    justify-content: center;
+    text-align: center;
+    font-family: 'Monstserrat',sans-serif;
+    line-height: .2em;
+
+}
+.titlebox h3
+{
+    margin-top: 10px;
+    font-size: 45px;
+    
+}
+.titlebox .event-capt
+{
+    margin-top: 40px;
+    color: rgb(194, 53, 53);
+    font-size: 23px;
+}
+
+.event-image .game-block .text
+{
+    color: black;
+    text-align: center;
+    line-height: 1.7em;
+    font-size: 20px;
+    padding: 0px 35px;
+    margin: 50px 0px;
+}
+.event-image .game-block .info .list
+{
+    color: black;
+    list-style: none;
+    display: flex;
+    font-size: 18px;
+    justify-content: space-evenly;
+    padding: 0 10px;
+    margin-right: 30px;
+    margin-bottom: 25px;
+}
+.list b{
+    font-size: 20px;
+}
+.list .txt
+{
+    color: rgb(224, 64, 64);
+}
+/*Buttons-------------------*/
+
+button
+{
+    position: relative;
+    height: 60px;
+    width: 180px;
+    background-color: indianred;
+    /* justify-content: space-between; */
+    margin-left: 18px;
+    border-radius: 5px;
+}
+button a
+{
+    text-decoration: none;
+    color: white;
+    
+}
+.but-text
+{
+    font-size: 20px;
+    font-family:'Arial Narrow', Arial, sans-serif;
+}
+.but-text-capt
+{
+    display: block;
+    font-size: 10px;
+    padding-top: 3px;
+}
+.fa
+{ 
+    color: black;
+    display: inline-block;
+    margin-left: 0% ;
+    box-sizing: border-box;
+    padding: 25px 0;
+}
+/*=============================================================================*/
+.image-block
+{
+    /* justify-content: right;
+    width: 50%;
+    position:absolute;
+    box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 10%);
+    margin-left: 32%;
+    margin-top: 2%;
+     */
+     /* box-shadow: 20px -20px 30px 0px rgb(0 0 0 / 20%); */
+    
+    position: absolute;
+    padding: 70px 50px;
+    background: white;
+    margin-left: 150px ;
+    padding-left: 300px ;
+    /* box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5); */
+}
