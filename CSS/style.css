@@ -403,8 +403,6 @@ section .container .contactinfo .info li:hover span:nth-child(1) i
 section .container .contactinfo .sci{
     position: relative;
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 
@@ -413,8 +411,7 @@ section .container .contactinfo .sci{
     color: #2857a4;
     display: inline-block;
     padding-top: 10px;
-    /* margin-right: 0.5rem; */
-   
+    margin-right: 0.5rem;
 }
 
 section .container .contactinfo .sci li{
@@ -434,7 +431,7 @@ section .container .contactinfo .sci li a i{
  }
 
 
- /* section .container .contactinfo .sci li:hover a i{
+ section .container .contactinfo .sci li:hover a i{
     opacity: 2s;
 
  }
@@ -452,7 +449,7 @@ section .container .contactinfo .sci li a i{
   
   .social-links li:nth-child(4) a:hover {
     color: #4040ff;
-  }  */
+  } 
 
 
  section .container .contactForm{
@@ -562,17 +559,14 @@ section .container .contactForm .formBox .inputBox input[type="submit"]:hover{
     background: #bf8632;
 }
 
- @media only screen and (max-width: 1070px) {
+@media only screen and (max-width: 1070px) {
     #contact .container{
         width: 90% ;
         min-width: auto ;
         margin: 20px;
         box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
-    } 
+    }
+   
+
 
   }
-
-   
-    
-
-
