@@ -5,6 +5,26 @@
     box-sizing: border-box;
     
 }
+
+/* Section 1  : +header + Nevigation  : Aniket + Himanshu */
+
+
+
+
+
+/*  Section 2  : About + Icons : Aniket + Himanshu   */
+
+
+
+
+
+/* Section 3 : Cards  :  Priyanshu */
+
+
+
+
+
+/* Section 4 : Tournaments : Srashti */
 .sec-4
 {
     justify-content: center;
@@ -50,60 +70,7 @@ hr
     margin-bottom: 90px;
     
 }
-
-
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing:border-box;
-}
-
-
-/* Section 1  : +header + Nevigation  : Aniket + Himanshu */
-
-
-
-
-
-/*  Section 2  : About + Icons : Aniket + Himanshu   */
-
-
-
-
-
-/* Section 3 : Cards  :  Priyanshu */
-
-
-
-
-
-/* Section 4 : Tournaments : Srashti */
-
-
-
-
-
-
-
-
-
-
-
 /*=============================================================================*/
-/* Section 4 : Tournaments : Srashti */
-
-
-
-
-
-
-
-
-
-
-
-/=============================================================================/
 /* .hello{
     border: 2px solid black;
 } */
@@ -118,52 +85,26 @@ hr
     /* border: 5px solid green; */
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: center; */
+    /* flex-direction: row-reverse; */
+    justify-content: center;
     align-items: center;
     text-align: center;
     margin-bottom: 50px;
-    justify-content: left;
-    margin-left: 6%;
-    /* padding: 0 10% ; */
-}
-.event-image:nth-child(2n)
-{
-    justify-content: left;
-    margin-left: 6%;
 }
 .event-image:nth-child(2n+1)
-{
-    justify-content: right;
-    margin-right: 6%;
-    display: flex;
-    flex-wrap: wrap;
-    /* left: 250px; */
-}
-.event-image:nth-child(2n+1) .game-block
-{
-    padding: 4% 0;
-    /* left: 250px; */
-}
-.event-image:nth-child(2n) .game-block
-{
-    padding: 4% 0;
-    /* left: 250px; */
-}
-/* .event-image:nth-child(2n+1) .image-block
-{
-    margin-right: 150px ;
-    padding-right: 300px ;
-} */
+ {
+    flex-direction: row-reverse;
+ }
+
 .event-image .game-block
 {
     /* border: 2px solid red; */
     justify-content: center;
     align-items: center;
-    background: rgba(252, 250, 249, 0.99);
+    background: rgba(236, 230, 227, 0.99);
     box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5);
     width: 500px;
-    margin-bottom: 30px;
-    padding: 10% 0;
+    margin-top: 60px;
 }
 .titlebox h3
 {
@@ -206,7 +147,7 @@ hr
     margin-top: 5px;
     color: rgb(224, 64, 64);
 }
-/* /Buttons-------------------/ */
+/*Buttons-------------------*/
  
 .event-image .buttons{
     /* border: 2px solid orange; */
@@ -222,8 +163,7 @@ hr
     border-radius: 5px;
     transition: 2ms;
     box-shadow: 5px 5px 10px 0px grey;
-    margin: 30px;
-    padding: 1% 5%;
+    margin: 10px;
 }
  button:hover
 {
@@ -245,14 +185,13 @@ button a
     font-size: 20px;
     font-family:'Arial Narrow', Arial, sans-serif;
 }
-/* /=============================================================================/ */
+/*=============================================================================*/
 .event-image .image-block
 {
     /* border: 5px solid yellowgreen; */
     display: flex;
     flex-wrap: wrap;
     transition: 2s;  
-    margin-bottom: 30px;
 } 
 .event-image .image:hover
 {
@@ -268,7 +207,6 @@ button a
         width: 100%;
     }   
 }
-
 
 /* Section 5 : Photo Gallery :  Mradul + Aryan */
 .gallery{
@@ -348,11 +286,8 @@ button a
     display: flex;
     flex-direction: column;
     margin: 50px;
-    padding: 0;
-
-    
+    padding: 0;  
 }
-
 
 
 /* Section 7 : Player Review : Riya */
