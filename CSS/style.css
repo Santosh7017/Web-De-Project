@@ -86,14 +86,20 @@ hr
     display: flex;
     flex-wrap: wrap;
     /* flex-direction: row-reverse; */
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     text-align: center;
     margin-bottom: 50px;
+    padding-left: 6%;
+    /* padding-top: 4%; */
 }
-.event-image:nth-child(2n+1)
+
+.event-image:nth-child(2n)
  {
     flex-direction: row-reverse;
+    justify-content: right;
+    padding-left: 0;
+    padding-right: 6%;
  }
 
 .event-image .game-block
@@ -101,10 +107,11 @@ hr
     /* border: 2px solid red; */
     justify-content: center;
     align-items: center;
-    background: rgba(236, 230, 227, 0.99);
+    background: rgba(248, 244, 243, 0.99);
     box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5);
     width: 500px;
     margin-top: 60px;
+    padding-top: 5%;
 }
 .titlebox h3
 {
@@ -154,6 +161,7 @@ hr
     display: flex;  
     justify-content: center;
     flex-wrap: wrap;
+    padding: 2%;
 }
 .event-image button
 {
@@ -164,6 +172,7 @@ hr
     transition: 2ms;
     box-shadow: 5px 5px 10px 0px grey;
     margin: 10px;
+    padding: 1% 8%;
 }
  button:hover
 {
@@ -178,10 +187,12 @@ button a
     flex-direction: column;
     text-decoration: none;
     color: white;
+    /* padding: 6% 2%; */
     
 }
 .but-text
 {
+    /* padding: 1%; */
     font-size: 20px;
     font-family:'Arial Narrow', Arial, sans-serif;
 }
@@ -191,7 +202,7 @@ button a
     /* border: 5px solid yellowgreen; */
     display: flex;
     flex-wrap: wrap;
-    transition: 2s;  
+    transition: 6s;  
 } 
 .event-image .image:hover
 {
@@ -205,7 +216,19 @@ button a
     .event-image .image-block .image img
     {
         width: 100%;
+        
     }   
+    
+}
+@media(max-width :1305px)
+{
+    .event-image:nth-child(n)
+    {
+        justify-content: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
 }
 
 /* Section 5 : Photo Gallery :  Mradul + Aryan */
