@@ -19,12 +19,7 @@
 
 
 /* Section 3 : Cards  :  Priyanshu */
-body {
-    padding: 10px;
-    margin: 0;
-    background: #eee;
-    font-family: sans-serif;
-}
+
 
 .index-post {
     width: 1124px; transition: all 1.5s;
@@ -658,7 +653,7 @@ min-height: 100vh;
     display: inline-block;
     padding-top: 10px;
     margin-right: 0.5rem;
-=======
+
     /* justify-content: center; */
 
 
@@ -700,7 +695,7 @@ min-height: 100vh;
   .social-links li:nth-child(4) a:hover {
     color: #4040ff;
   } 
-=======
+
 
 
 
