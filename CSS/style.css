@@ -19,7 +19,12 @@
 
 
 /* Section 3 : Cards  :  Priyanshu */
-
+/* body {
+    padding: 10px;
+    margin: 0;
+    background: #eee;
+    font-family: sans-serif;
+}
 
 .index-post {
     width: 1124px; transition: all 1.5s;
@@ -116,7 +121,7 @@
     }
 }
 
-
+ */
 
 
 /* Section 4 : Tournaments : Srashti */
@@ -411,7 +416,7 @@ button a
 /* Section 7 : Player Review : Riya */
 
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 
 * > * {
@@ -538,7 +543,7 @@ button a
         display: initial;
     }
 
-}
+} */
 
 
 /* section 8 : Contact  : Santosh  */
@@ -680,22 +685,7 @@ min-height: 100vh;
     opacity: 2s;
 
  }
- section .container .contactinfo .sci li:nth-child(1) a:hover {
-    color: dodgerblue;
-  }
-  
-  .social-links li:nth-child(2) a:hover {
-    color: orange;
-  }
-  
-  .social-links li:nth-child(3) a:hover, .social-links li:nth-child(5) a:hover {
-    color: red;
-  }
-  
-  .social-links li:nth-child(4) a:hover {
-    color: #4040ff;
-  } 
-
+ 
 
 
 
