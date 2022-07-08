@@ -21,20 +21,21 @@
 /* Section 3 : Cards  :  Priyanshu */
 
 .index-post {
-    width: 1124px; transition: all 1.5s;
-    height: 364px; overflow: hidden; 
+    width: 100%; transition: all 1.5s;
+    height: 100%; overflow: hidden; 
     margin: auto;
     display: block;
     margin-top: 10%;
+  
 }
 
 .contener {
     float: left;
-    margin: 20px;
+    margin: 36px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 240px;
+    width: 241.5px;
     height: 320px;
     overflow: hidden;
     background: #fff;
@@ -558,21 +559,11 @@ display: flex;
 justify-content: center;
 align-items: center;
 min-height: 100vh;
-/* background-color: rgb(224, 234, 218);
- */
+
  background-image: linear-gradient(20deg, #a46e28 30%, rgb(255, 255, 255) 50% );
 }
  
 
-#contact::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
-    
-} 
 
 .container{
     position: relative;
@@ -580,7 +571,7 @@ min-height: 100vh;
     min-height: 550px;
     display: flex;
     z-index: 1000;
-    /* background: #fff; */
+   
 
 }
 
@@ -653,7 +644,7 @@ min-height: 100vh;
     padding-top: 10px;
     margin-right: 0.5rem;
 
-    /* justify-content: center; */
+   
 
 
 }
@@ -661,7 +652,7 @@ min-height: 100vh;
 .container .contactInfo ul.sci li{
     list-style: none;
     margin: 25px;
-    /* margin-right: 17px; */
+   
     font-size: 1.2rem;
 }
 
