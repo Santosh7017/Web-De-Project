@@ -81,7 +81,7 @@
     color: #373737;
 }
 
-.button-contener {
+.button1-contener {
     display: flex;
     align-items: center;
     width: 80%;
@@ -89,7 +89,7 @@
     height: 40px;
 }
 
-.button-contener .button {
+.button1-contener .button {
     width: 100%;
     padding: 6px 0;
     text-decoration: none;
@@ -101,7 +101,7 @@
 
 }
 
-.button-contener .button:hover {
+.button1-contener .button:hover {
     padding-left: 15px;
 }
 
