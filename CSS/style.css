@@ -411,7 +411,7 @@ button a
 /* Section 7 : Player Review : Riya */
 
 
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 
 * > * {
@@ -426,8 +426,8 @@ button a
     --color-light: #EBEBFB;
 }
 
-.container{
-    height: 98vh;
+.container-riya{
+    height: 1100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -538,7 +538,7 @@ button a
         display: initial;
     }
 
-} */
+}
 
 
 /* section 8 : Contact  : Santosh  */
