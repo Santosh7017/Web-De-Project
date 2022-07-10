@@ -13,13 +13,10 @@
 
 
 /*  Section 2  : About + Icons : Aniket + Himanshu   */
-
-
-
 .section-aniket{
 	width: 100%;
 	min-height:600px;
-	background-color: rgb(252, 251, 250);
+	background-color: rgba(252, 251, 250, 0.927);
 }
 .container-aniket{
 	width: 80%;
@@ -39,7 +36,7 @@
 	width: 100%;
 	height: auto;
 }
-.content-section .title{
+.title{
 	text-transform: uppercase;
 	font-size: 28px;
 }
@@ -87,12 +84,6 @@
 	margin:auto;
 	padding-top:50px;
 }
-.content-section{
-	float:none;
-	width:100%;
-	display: block;
-	margin:auto;
-}
 .image-section{
 	float:none;
 	width:100%;
@@ -104,9 +95,21 @@
 	display: block;
 	margin:auto;
 }
-.content-section .title{
+.content-section{
+	float:none;
+	width:100%;
+	display: block;
+	margin:auto;
+}
+.title{
 	text-align: center;
 	font-size: 19px;
+}
+.content-section{
+	float:none;
+	width:100%;
+	display: block;
+	margin:auto;
 }
 .content-section .content .button{
 	text-align: center;
@@ -119,7 +122,6 @@
 }
 
 }
-
 
 /* Section 3 : Cards  :  Priyanshu */
 
