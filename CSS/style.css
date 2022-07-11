@@ -813,6 +813,7 @@ min-height: 100vh;
     flex-direction: column;
     justify-content: space-between;
     box-shadow: 0 25px 25px rgba(0, 0, 0, 0.15);
+    border-radius: 10%;
 }
 
 
@@ -911,6 +912,7 @@ min-height: 100vh;
     height: 100%;
     background: #fff;
     box-shadow: 30px 50px 50px 30px rgba(0, 0, 0, 0.25);
+    border-radius: 10%;
 }
 
 
