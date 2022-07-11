@@ -8,6 +8,240 @@
 
 /* Section 1  : +header + Nevigation  : Aniket + Himanshu */
 
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 44%;
+    border: 3px solid white;
+    border-radius: 50px;
+}
+.navbar{
+    display: flex;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    z-index: 2000;
+}
+.navlist{
+    width: 140%;
+    display: flex;
+    align-items: center;
+
+}
+.navlist li{
+    list-style: none;
+    padding: 30px 15px;
+    text-transform: uppercase;
+}
+.navlist li a{
+    text-decoration: none;
+    color: white;
+}
+.navlist li a:hover, a.active{
+    background-color: #1b9bff;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+.rightnav{
+    padding: 0p 23px;
+    width: 50%;
+    text-align: right;
+}
+#Search{
+    padding: 5px;
+    font-size: 17px;
+    border: 2px black;
+    border-radius: 9px;
+    text-align: center;
+}
+.background{
+    background: rgba(0,0,0,0.7) url('../images/download.png');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.firstsection{
+    height: 100vh;
+}
+.boxmain{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     color: white;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     max-width: 50%;
+     margin: auto;
+     height: 80%;
+}
+.firsthalf{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: centre;
+}
+.secondhalf{
+    width: 30%;
+}
+.secondhalf img{
+    width: 144%;
+    border-radius: 150px;
+    display: block;
+    margin: auto;
+}
+.text-big{
+    font-size: 40px;
+}
+.text-small{
+    font-size: 20px;
+}
+.btn{
+    padding: 8px 20px;
+    margin: 7px 3px;
+    border: 2px solid white;
+    border-radius: 8px;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+.btn-sa{
+    padding: 6px 10px;
+    vertical-align: middle;
+}
+.secRight{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+}
+.sectionTag{
+    font-size: 40px;
+    font-weight: bold;
+}
+.sectionSubTag1{
+    font-size: 20px;
+    color: orange;
+    padding-top: 20px;
+}
+.subtag2{
+    font-size: 20px;
+    padding-top: 20px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: centre;
+}
+.thumnail{
+    padding-right: 20%;
+}
+.rm-btn li a{
+    list-style: none;
+    padding: 9px 20px;
+    margin: 12px 3px;
+    border: 2px orange;
+    border-radius: 20px;
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+}
+.rm-btn a{
+    color: white;
+    text-decoration: none;
+    display: flex;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+}
+.rm-btn a:hover{
+    background-color: blue;
+}
+.secRight .social{
+	margin: 40px 40px;
+}
+.secRight .social i{
+	color:#e78611;
+	font-size: 30px;
+	padding:0px 10px;
+}
+.secRight .social i:hover{
+	color:#3d3d3d;
+}
+.section{
+	width: 100%;
+	min-height:600px;
+	background-color: rgb(252, 251, 250);
+}
+.container{
+	width: 80%;
+	display: block;
+	margin:auto;
+}
+.content-section{
+	float: left;
+	width: 55%;
+}
+.image-section{
+	float: right;
+	width: 40%;
+}
+.image-section img{
+	width: 100%;
+	height: auto;
+}
+.content-section .title{
+	text-transform: uppercase;
+	font-size: 28px;
+}
+.content-section .content h3{
+	margin-top: 20px;
+	color:#fea900;
+	font-size: 21px;
+}
+.content-section .content p{
+	margin-top: 10px;
+	font-family: sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+}
+.content-section .content .button{
+	margin-top: 30px;
+}
+.content-section .content .button a{
+	background-color: #e78611;
+    border-radius: 10px 10px;
+	padding:12px 40px;
+	text-decoration: none;
+	color:#fff;
+	font-size: 25px;
+	letter-spacing: 1.5px;
+}
+.content-section .content .button a:hover{
+	background-color:#3d3d3d; 
+	color:#fff;
+}
+.content-section .social{
+	margin: 40px 40px;
+}
+.content-section .social i{
+	color:#e78611;
+	font-size: 30px;
+	padding:0px 10px;
+}
+.content-section .social i:hover{
+	color:#3d3d3d;
+}
+.secRight{
+    margin-top: 20%;
+}
 
 
 
@@ -462,190 +696,287 @@ button a
 
 
 
-/*  : Growth Section : Vaibhav + Krishna */
-
-.fun-facts-section{
-   position: relative;
-   z-index: -1;
-   background: url("/images/banner_new.png") no-repeat center center/cover;
-}
-
-.image-layer{
-    margin: 0;
-    height: 98%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-.image-layer .hello{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.image-layer .hello .first-txt{
-    color: white;
-    font-size: 50px;
-    padding: 0px 0px 0px 0px;
-    margin: 10px 50px 10px 60px;
-    font-style: italic;
-    font-weight: bold;
-    
-}
-
-.image-layer .hello .second-txt{
-    color: #ff7600;
-    font-size: 3rem;
-    font-size: 20px;
-    margin-bottom: 30px;
-} 
-.material-symbols-outlined.md-80{
-    color: white;
-    font-size: 80px;
-}
-
-.hello{
-    display: flex;
-    flex-direction: column;
-    margin: 50px;
-    padding: 0;  
-}
 
 
-/* Section 7 : Player Review : Riya */
 
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 
-* > * {
-    font-family: 'Poppins', sans-serif;
-}
 
-:root{
-    --color-dark: #151C35;
-    --color-secodary-dark: #464C70;
-    --color-primary: #EE709D;
-    --color-text: #8297E2;
-    --color-light: #EBEBFB;
-}
 
-.container-riya{
-    height: 1100px;
+
+
+/* Sectoin 6 : Growth Section : Vaibhav + Krishna */
+
+.fun-facts-section{
+    position: relative;
+    z-index: -1;
+    background: url("/images/banner_new.png") no-repeat center center/cover;
+    /* border: 2px solid yellow; */
+ }
+ 
+ .image-layer{
+     /* margin: 0; */
+     height: 98%;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+ }
+ .image-layer .hello{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ 
+ .image-layer .hello .first-txt{
+     color: white;
+     font-size: 50px;
+     padding: 0px 0px 0px 0px;
+     margin: 10px 50px 10px 60px;
+     font-style: italic;
+     font-weight: bold;
+     
+ }
+ 
+ .image-layer .hello .second-txt{
+     color: #ff7600;
+     font-size: 3rem;
+     font-size: 20px;
+     margin-bottom: 30px;
+ } 
+ .material-symbols-outlined.md-80{
+     color: white;
+     font-size: 80px;
+ }
+ 
+ .hello{
+     display: flex;
+     flex-direction: column;
+     margin: 50px;
+     padding: 0;
+ 
+     
+ }
+ 
+ 
+ 
+ /* Section 7 : Player Review : Riya */
+ 
+ 
+ /* :root{
+     --color-dark: #151C35;
+     --color-secodary-dark: #464C70;
+     --color-primary: #EE709D;
+     --color-text: #8297E2;
+     --color-light: #EBEBFB;
+ }
+ 
+ .hi{
+     font-family: 'Poppins', sans-serif;
+    
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+   
+     padding: 0;
+ }
+ 
+ .board{
+     
+     width: 100%;
+     background-color: var(--color-dark);
+     text-align: center;
+ }
+ 
+ .text-light{
+    
+     padding-top: 50px;
+     font-size: 3rem;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+     color: var(--color-light);
+ }
+ 
+ .swiper {
+     display: flex;
+     flex-wrap: wrap;
+    
+     justify-content: center;
+   }
+ 
+ .swiper .swiper-slide .flex{
+     
+     margin: 3em 0;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+ 
+ .swiper .swiper-slide .comments{
+     background-color: var(--color-light);
+     padding: 1.5em 2em;
+     width: 50%;
+     border-radius: 5px;
+     font-size: .9em;
+     position: relative;
+ }
+ 
+ .swiper .swiper-slide .comments::after{
+     content: '';
+     position: absolute;
+     bottom: -19px;
+     left: 45%;
+     width: 0;
+     height: 0;
+     border-left: 20px solid transparent;
+     border-right: 20px solid transparent;
+     border-top: 20px solid var(--color-light);
+     z-index: -1;
+ }
+ 
+ 
+ .swiper .profile{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin-top: 1em;
+ }
+ 
+ .swiper .profile a{
+     font-size: 20px;
+     color: white;
+ }
+ .swiper .profile a:hover{
+     color: rgb(9, 241, 48);
+ }
+ .swiper .profile span{
+     font-size: 28px;
+     color: yellow;
+ }
+ 
+ .swiper .profile img{
+     width: 30%;
+     border-radius: 50%;
+     border: 5px solid var(--color-primary);
+     margin: 10px 0;
+ }
+ 
+  */
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    background: linear-gradient(90deg, #9e93a3 0% ,#1dcff2 100%);
+    min-height: 100vh;
+    margin: auto;
     display: flex;
     flex-direction: column;
-    column-count: 3;
     justify-content: center;
     align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #fff;
 }
-
-.board{
-    max-width: 987px;
-    width: 100%;
-    background-color: var(--color-dark);
+.wrapper h1{
+    font-size: 60px;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 20px;
     text-align: center;
-    border-radius: 8px;
-    padding: 4em 0;
 }
-
-.text-light{
-    color: var(--color-light);
+.wrapper h5{
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 80px;
 }
-
-.swiper {
-    width: 600px;
-    height: auto;
-  }
-
-.swiper .swiper-slide .flex{
-    margin: 3em 2em;
+.cards{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-}
+    width: 1200px;
+    margin: auto;
 
-.swiper .swiper-slide .comments{
-    background-color: var(--color-light);
-    padding: 1.5em 2em;
-    width: 50%;
-    border-radius: 5px;
-    font-size: .9em;
+}
+.card{
+    width: 400px;
+    height: 250px;
+    border-radius: 15px;
+    margin: 7px;
+    padding: 20px 30px;
     position: relative;
+    background: rgba(255,255,255,0.2);
+    box-shadow: 10px 20px 25px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+
 }
-
-.swiper .swiper-slide .comments::after{
-    content: '';
-    position: absolute;
-    bottom: -19px;
-    left: 45%;
-    width: 0;
-    height: 0;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-top: 20px solid var(--color-light);
-    z-index: -99;
-}
-
-
-.swiper .profile{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 1em;
-}
-
-.swiper .profile img{
-    width: 30%;
+.card img{
+    height: 90px;
+    width: 90px;
+    border: 2px solid #f2f2f2;
     border-radius: 50%;
-    border: 5px solid var(--color-primary);
-    margin: 10px 0;
+    position: absolute;
+    top: -40px;
+    left:20px;
+
+}
+.card p{
+    font-size: 16px;
+    margin-top: 40px;
+    margin-bottom: 25px;
+
+}
+.card h2{
+    font-weight: 500;
+    margin-bottom: 4px;
+
+
+}
+.card h4{
+    color: black;
+     font-weight: 400;
+     font-size: 16px;
+}
+.card i{
+    font-size: 60px;
+    position: absolute;
+    bottom: 20px;
+    right: 25px;
+    color: #b2bec3;
+
+}
+.card:hover{
+    transform: scale(1.4);
+    color: #333;
+    background: #fff;
+    z-index: 10000;
+
+    
 }
 
-.swiper .profile > a{
-    text-decoration: none;
-    color: var(--color-light);
-}
 
-.swiper .profile > span{
-    color: var(--color-text);
-    font-size: .8em;
-}
 
-.swiper .swiper-button-prev, .swiper-button-next{
-    color: var(--color-text);
-    display: none;
-} 
 
-@media (min-width: 320px) {
-    .board{
-        width: auto;
+
+
+
+   @media(max-width:800px)
+{
+    .cards{
+        width:100%;
+    flex-direction: column;
     }
-
-    .swiper {
-        width: 320px;
-      }
-
-      .board > h1, p{
-          padding: 0 2em;
-      }
-}
-
-@media (min-width: 768px) {
-    .board{
-        width: 100%;
+    .card{
+        margin:40px 0;
     }
-
-    .swiper {
-        width: 600px;
-      }
-
-    .swiper .swiper-button-prev, .swiper-button-next{
-        display: initial;
-    }
-
 }
-
 
 /* section 8 : Contact  : Santosh  */
 
