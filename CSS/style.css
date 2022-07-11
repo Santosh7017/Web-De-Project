@@ -764,7 +764,110 @@ button a
  
  /* Section 7 : Player Review : Riya */
  
- 
+ .wrapper{
+    background: linear-gradient(90deg, #b7afba 0% ,#3aaddf 100%);
+    min-height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #fff;
+}
+.wrapper h1{
+    font-size: 60px;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.wrapper h5{
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    margin: auto;
+
+}
+.card{
+    width: 400px;
+    height: 250px;
+    border-radius: 15px;
+    margin: 7px;
+    padding: 20px 30px;
+    position: relative;
+    background: rgba(255,255,255,0.2);
+    box-shadow: 10px 20px 25px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+
+}
+.card img{
+    height: 90px;
+    width: 90px;
+    border: 2px solid #f2f2f2;
+    border-radius: 50%;
+    position: absolute;
+    top: -40px;
+    left:20px;
+
+}
+.card p{
+    font-size: 16px;
+    margin-top: 40px;
+    margin-bottom: 25px;
+
+}
+.card h2{
+    font-weight: 500;
+    margin-bottom: 4px;
+
+
+}
+.card h4{
+    color: black;
+     font-weight: 400;
+     font-size: 16px;
+}
+.card i{
+    font-size: 60px;
+    position: absolute;
+    bottom: 20px;
+    right: 25px;
+    color: #b2bec3;
+
+}
+.card:hover{
+    transform: scale(1.4);
+    color: #333;
+    background: #fff;
+    z-index: 10000;
+
+    
+}
+
+
+
+
+
+
+
+   @media(max-width:800px)
+{
+    .cards{
+        width:100%;
+    flex-direction: column;
+    }
+    .card{
+        margin:40px 0;
+    }
+}
  
 
 /* section 8 : Contact  : Santosh  */
