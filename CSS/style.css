@@ -27,7 +27,7 @@
     position: sticky;
     top: 0;
     cursor: pointer;
-    z-index: 2000;
+    z-index: 4000;
 }
 .navlist{
     width: 140%;
@@ -63,7 +63,7 @@
     text-align: center;
 }
 .background{
-    background: rgba(0,0,0,0.7) url('../images/download.png');
+    background: rgba(0,0,0,0.7) ;
     background-size: cover;
     background-blend-mode: darken;
 }
@@ -774,6 +774,7 @@ button a
     align-items: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #fff;
+    
 }
 .wrapper h1{
     font-size: 60px;
@@ -847,7 +848,7 @@ button a
     transform: scale(1.4);
     color: #333;
     background: #fff;
-    z-index: 10000;
+    z-index: 100;
 
     
 }
@@ -858,7 +859,7 @@ button a
 
 
 
-   @media(max-width:800px)
+   @media(max-width:1050px)
 {
     .cards{
         width:100%;
@@ -876,18 +877,15 @@ button a
 
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
-*{
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
+
 
 #contact{
 display: flex;
 justify-content: center;
 align-items: center;
 min-height: 100vh;
+font-family: 'Poppins', sans-serif;
+
 
  background-image: linear-gradient(20deg, #a46e28 30%, rgb(255, 255, 255) 50% );
 }
@@ -1118,6 +1116,7 @@ color: rgb(88, 63, 3);
     top: 0;
     height: 550px;
     position: relative;
+    border-radius: 0;
 }
 
 
@@ -1129,6 +1128,7 @@ color: rgb(88, 63, 3);
     padding: 40px;
     height: 550px;
     box-shadow: none;
+    border-radius: 0;
 }
 
 
@@ -1154,6 +1154,7 @@ color: rgb(88, 63, 3);
         height: auto;
         background-image: linear-gradient(50deg, #3d6dba 8%, rgb(198, 198, 91) 75% );
         flex-direction: row;
+        border-radius: 0;
     }
 
     .container .contactInfo ul.sci{
@@ -1167,6 +1168,7 @@ color: rgb(88, 63, 3);
     .container .contactForm{
         width: 100%;
         height: auto;
+        border-radius: 0;
         
     }
 
@@ -1175,12 +1177,14 @@ color: rgb(88, 63, 3);
 @media only screen and (max-width: 558px){
     .container .contactForm{
         padding: 25px;
+        border-radius: 0;
 
     }
 
     .container .contactInfo{
         padding: 25px;
         flex-direction: column;
+        border-radius: 0;
 
     }
  .container .contactInfo ul.sci{
