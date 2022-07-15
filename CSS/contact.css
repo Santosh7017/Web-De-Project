@@ -147,6 +147,9 @@
 label{
     display: none;
 }
+#click{
+    display: none;
+}
 @media (max-width: 900px){
     .navbar{
         display: block
@@ -248,7 +251,7 @@ min-height: 100vh;
     min-width: 1100px;
     min-height: 550px;
     display: flex;
-    z-index: 1000;
+    z-index: 0;
    
 
 }

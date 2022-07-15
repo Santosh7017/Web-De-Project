@@ -149,6 +149,9 @@
 label{
     display: none;
 }
+#click{
+    display: none;
+}
 @media (max-width: 900px){
     .navbar{
         display: block
