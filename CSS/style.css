@@ -228,20 +228,20 @@ label{
     color: white;
 }
 .firstsection{
-    background: url('/images/Slideshow_1.png') no-repeat center center/cover;
+    background: url('../images/Slideshow_1.png') no-repeat center center/cover;
     height: 100vh;
     animation: slideshow 20s infinite;
     animation-delay: 4s;
 }
 @keyframes slideshow{
     25%{
-        background: url('/images/Slideshow_2.png') no-repeat center center/cover; 
+        background: url('../images/Slideshow_2.png') no-repeat center center/cover; 
     }
     50%{
-        background: url('/images/Slideshow_3.png') no-repeat center center/cover; 
+        background: url('../images/Slideshow_3.png') no-repeat center center/cover; 
     }
     75%{
-        background: url('/images/Slideshow_4.png') no-repeat center center/cover; 
+        background: url('../images/Slideshow_4.png') no-repeat center center/cover; 
     }
 }
 .boxmain{
