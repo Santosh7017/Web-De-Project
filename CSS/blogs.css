@@ -124,7 +124,6 @@
     }
 }
 
-/* Section 1  : +header + Nevigation  : Aniket + Himanshu */
 
 .navbar{
     display: flex;
@@ -224,192 +223,103 @@ label{
     right: 20px;
     color: white;
 }
-.firstsection{
-    background: url('/images/Slideshow_1.png') no-repeat center center/cover;
-    height: 100vh;
-    animation: slideshow 20s infinite;
-    animation-delay: 4s;
+
+ /* Section 7 : Player Review : Riya */
+ 
+ @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+:root{
+    --color-dark: #151C35;
+    --color-secodary-dark: #464C70;
+    --color-primary: #EE709D;
+    --color-text: #8297E2;
+    --color-light: #EBEBFB;
 }
-@keyframes slideshow{
-    25%{
-        background: url('/images/Slideshow_2.png') no-repeat center center/cover; 
-    }
-    50%{
-        background: url('/images/Slideshow_3.png') no-repeat center center/cover; 
-    }
-    75%{
-        background: url('/images/Slideshow_4.png') no-repeat center center/cover; 
-    }
-}
-.boxmain{
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     color: white;
-     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-     max-width: 50%;
-     margin: auto;
-     height: 80%;
-}
-.firsthalf{
-    width: 80%;
+
+.riya-container{
+    font-family: 'Poppins', sans-serif;
+    /* border: 2px solid red; */
     display: flex;
-    flex-direction: column;
-    justify-content: centre;
-}
-.secondhalf{
-    width: 30%;
-}
-.secondhalf img{
-    width: 144%;
-    border-radius: 150px;
-    display: block;
-    margin: auto;
-}
-.text-big{
-    font-size: 40px;
-}
-.text-small{
-    font-size: 20px;
-}
-.btn{
-    padding: 8px 20px;
-    margin: 7px 3px;
-    border: 2px solid white;
-    border-radius: 8px;
-    background: none;
-    color: white;
-    cursor: pointer;
-}
-.btn-sa{
-    padding: 6px 10px;
-    vertical-align: middle;
-}
-.secRight{
-    height: 500px;
-    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    justify-content: space-evenly;
-    max-width: 80%;
-    margin: auto;
 }
-.sectionTag{
-    font-size: 40px;
-    font-weight: bold;
+
+.board{
+    /* border: 2px solid rgb(0, 238, 255); */
+    width: 100%;
+    background-color: var(--color-dark);
+    text-align: center;
+    /* margin: 3px; */
 }
-.sectionSubTag1{
-    font-size: 20px;
-    color: orange;
-    padding-top: 20px;
+
+.text-light{
+    /* border: 2px solid green; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-light);
 }
-.subtag2{
-    font-size: 20px;
-    padding-top: 20px;
-    width: 80%;
+
+.swiper {
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 2px solid yellow; */
+  }
+
+.swiper .swiper-slide .flex{
+    /* border: 2px solid orange; */
+    margin: 3em 0;
     display: flex;
     flex-direction: column;
-    justify-content: centre;
+    align-items: center;
 }
-.thumnail{
-    padding-right: 20%;
+
+.swiper .swiper-slide .comments{
+    background-color: var(--color-light);
+    padding: 1.5em 2em;
+    width: 50%;
+    border-radius: 5px;
+    font-size: .9em;
+    position: relative;
 }
-.rm-btn li a{
-    list-style: none;
-    padding: 9px 20px;
-    margin: 12px 3px;
-    border: 2px orange;
-    border-radius: 20px;
-    background-color: orange;
-    color: white;
-    cursor: pointer;
+
+.swiper .swiper-slide .comments::after{
+    content: '';
+    position: absolute;
+    bottom: -19px;
+    left: 45%;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid var(--color-light);
+    z-index: -99;
 }
-.rm-btn a{
-    color: white;
-    text-decoration: none;
+
+
+.swiper .profile{
     display: flex;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 18px;
-    font-weight: bold;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1em;
 }
-.rm-btn a:hover{
-    background-color: blue;
+
+.swiper .profile a{
+    font-size: 20px;
+    color: white;
 }
-.secRight .social{
-	margin: 40px 40px;
+.swiper .profile a:hover{
+    color: rgb(9, 241, 48);
 }
-.secRight .social i{
-	color:#e78611;
-	font-size: 30px;
-	padding:0px 10px;
+.swiper .profile span{
+    font-size: 28px;
+    color: yellow;
 }
-.secRight .social i:hover{
-	color:#3d3d3d;
-}
-.firstsection{
-	width: 100%;
-	min-height:600px;
-	background-color: rgb(252, 251, 250);
-}
-.container{
-	width: 80%;
-	display: block;
-	margin:auto;
-}
-.content-section{
-	float: left;
-	width: 55%;
-}
-.image-section{
-	float: right;
-	width: 40%;
-}
-.image-section img{
-	width: 100%;
-	height: auto;
-}
-.content-section .title{
-	text-transform: uppercase;
-	font-size: 28px;
-}
-.content-section .content h3{
-	margin-top: 20px;
-	color:#fea900;
-	font-size: 21px;
-}
-.content-section .content p{
-	margin-top: 10px;
-	font-family: sans-serif;
-	font-size: 18px;
-	line-height: 1.5;
-}
-.content-section .content .button{
-	margin-top: 30px;
-}
-.content-section .content .button a{
-	background-color: #e78611;
-    border-radius: 10px 10px;
-	padding:12px 40px;
-	text-decoration: none;
-	color:#fff;
-	font-size: 25px;
-	letter-spacing: 1.5px;
-}
-.content-section .content .button a:hover{
-	background-color:#3d3d3d; 
-	color:#fff;
-}
-.content-section .social{
-	margin: 40px 40px;
-}
-.content-section .social i{
-	color:#e78611;
-	font-size: 30px;
-	padding:0px 10px;
-}
-.content-section .social i:hover{
-	color:#3d3d3d;
-}
-.secRight{
-    margin-top: 20%;
+
+.swiper .profile img{
+    width: 30%;
+    border-radius: 50%;
+    border: 5px solid var(--color-primary);
+    margin: 10px 0;
 }
