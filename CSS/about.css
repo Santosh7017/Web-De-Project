@@ -124,7 +124,6 @@
     }
 }
 
-/* Section 1  : +header + Nevigation  : Aniket + Himanshu */
 
 .navbar{
     display: flex;
@@ -154,7 +153,7 @@ label{
 }
 @media (max-width: 900px){
     .navbar{
-        display: block
+        display: block;
     }
     label{
         display: block;
@@ -227,171 +226,45 @@ label{
     right: 20px;
     color: white;
 }
-.firstsection{
-    background: url('../images/Slideshow_1.png') no-repeat center center/cover;
-    height: 100vh;
-    animation: slideshow 20s infinite;
-    animation-delay: 4s;
-}
-@keyframes slideshow{
-    25%{
-        background: url('../images/Slideshow_2.png') no-repeat center center/cover; 
-    }
-    50%{
-        background: url('../images/Slideshow_3.png') no-repeat center center/cover; 
-    }
-    75%{
-        background: url('../images/Slideshow_4.png') no-repeat center center/cover; 
-    }
-}
-.boxmain{
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     color: white;
-     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-     max-width: 50%;
-     margin: auto;
-     height: 80%;
-}
-.firsthalf{
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: centre;
-}
-.secondhalf{
-    width: 30%;
-}
-.secondhalf img{
-    width: 144%;
-    border-radius: 150px;
-    display: block;
-    margin: auto;
-}
-.text-big{
-    font-size: 40px;
-}
-.text-small{
-    font-size: 20px;
-}
-.btn{
-    padding: 8px 20px;
-    margin: 7px 3px;
-    border: 2px solid white;
-    border-radius: 8px;
-    background: none;
-    color: white;
-    cursor: pointer;
-}
-.btn-sa{
-    padding: 6px 10px;
-    vertical-align: middle;
-}
-.secRight{
-    height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    max-width: 80%;
-    margin: auto;
-}
-.sectionTag{
-    font-size: 40px;
-    font-weight: bold;
-}
-.sectionSubTag1{
-    font-size: 20px;
-    color: orange;
-    padding-top: 20px;
-}
-.subtag2{
-    font-size: 20px;
-    padding-top: 20px;
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: centre;
-}
-.thumnail{
-    padding-right: 20%;
-}
-.rm-btn li a{
-    list-style: none;
-    padding: 9px 20px;
-    margin: 12px 3px;
-    border: 2px orange;
-    border-radius: 20px;
-    background-color: orange;
-    color: white;
-    cursor: pointer;
-}
-.rm-btn a{
-    color: white;
-    text-decoration: none;
-    display: flex;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 18px;
-    font-weight: bold;
-}
-.rm-btn a:hover{
-    background-color: blue;
-}
-.secRight .social{
-	margin: 40px 40px;
-}
-.secRight .social i{
-	color:#e78611;
-	font-size: 30px;
-	padding:0px 10px;
-}
-.secRight .social i:hover{
-	color:#3d3d3d;
-}
-.firstsection{
+/*  Section 2  : About + Icons : Aniket + Himanshu   */
+.section-aniket{
 	width: 100%;
 	min-height:600px;
-	background-color: rgb(252, 251, 250);
+	background-color: rgba(252, 251, 250, 0.927);
 }
-.container{
-	width: 80%;
-	display: block;
-	margin:auto;
+.section-aniket .title{
+    margin-top: 10px;
+    text-align: center;
+}
+.container-aniket{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .content-section{
-	float: left;
-	width: 55%;
+    margin: 20px;
+    padding: 20px;
 }
-.image-section{
-	float: right;
-	width: 40%;
-}
-.image-section img{
-	width: 100%;
-	height: auto;
-}
-.content-section .title{
-	text-transform: uppercase;
+.title{
+    text-transform: uppercase;
 	font-size: 28px;
 }
 .content-section .content h3{
-	margin-top: 20px;
+    margin-top: 20px;
 	color:#fea900;
-	font-size: 21px;
+	font-size: 25px;
 }
 .content-section .content p{
-	margin-top: 10px;
+    margin-top: 10px;
 	font-family: sans-serif;
 	font-size: 18px;
 	line-height: 1.5;
 }
 .content-section .content .button{
-	margin-top: 30px;
+    margin-top: 30px;
 }
 .content-section .content .button a{
-	background-color: #e78611;
-    border-radius: 10px 10px;
+    background-color: #e78611;
 	padding:12px 40px;
 	text-decoration: none;
 	color:#fff;
@@ -399,11 +272,11 @@ label{
 	letter-spacing: 1.5px;
 }
 .content-section .content .button a:hover{
-	background-color:#3d3d3d; 
+    background-color:#3d3d3d; 
 	color:#fff;
 }
 .content-section .social{
-	margin: 40px 40px;
+    margin: 40px 40px;
 }
 .content-section .social i{
 	color:#e78611;
@@ -411,8 +284,95 @@ label{
 	padding:0px 10px;
 }
 .content-section .social i:hover{
-	color:#3d3d3d;
+    color:#3d3d3d;
 }
-.secRight{
-    margin-top: 20%;
+.image-section{
+    margin: auto;
+    width: 27%;
+}
+@media screen and (max-width: 768px){
+    .image-section{
+        display: inline;
+        width: 60%;
+    }
+    .content-section{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Section 3 : Cards  :  Priyanshu */
+
+.index-post {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.contener {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 250px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 30px 0 #00000073;
+    transition: all 0.3s;
+}
+
+.contener:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 11px 14px rgb(0 0 0 / 25%), 0 8px 20px rgb(0 0 0 / 10%);
+}
+
+.image-contener {
+    display: block;
+}
+
+.image-contener img {
+    width: 100%;
+    height: 100%;
+}
+
+.meta-contener {
+    display: block;
+    text-align: center;
+}
+
+.meta-contener .title {
+    margin: auto;
+    font-size: 22px;
+    color: #0076b6;
+}
+
+.meta-contener .desc {
+    font-size: 13px;
+    color: #373737;
+}
+
+.button1-contener {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    text-align: center;
+    height: 40px;
+    bottom: 2px;
+}
+
+.button1-contener .button {
+    width: 100%;
+    padding: 6px 0;
+    text-decoration: none;
+    background: linear-gradient(125deg, #00ff35 0%, #0091a7 60%);
+    color: #fff;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+.button1-contener .button:hover {
+    padding-left: 20px;
 }
