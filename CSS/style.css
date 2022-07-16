@@ -869,6 +869,16 @@ button a
         margin:40px 0;
     }
 }
+@media(max-width:800px)
+{
+    .cards{
+        width:100%;
+    flex-direction: column;
+    }
+    .card{
+        margin:40px 0;
+    }
+}
  
 
 /* section 8 : Contact  : Santosh  */
