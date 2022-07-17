@@ -1,4 +1,267 @@
 /* Section 1  */
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.one 
+{
+    padding: 1% 27%;
+}
+
+.box
+{
+    display: flex;
+    padding: 5% 10%;
+	padd
+}
+.base
+{
+   /* display: flex; */
+    /* justify-content: center; */
+    text-align: center;
+    padding-top: 3%;
+    /* -webkit-animation: all 7s ease; */
+    /* transform: perspective(20px); */
+   transition: 1s;
+    margin-bottom: .5%;
+    /* transition: transform 300ms ease-in-out; */
+    /* transform: scaleY(0); */
+    /* transform-origin: top; */
+    
+}
+
+.base:hover
+{
+    background-color: black;
+    opacity: 0.9;
+    /* transform: scaleY(1); */
+    /* background:linear-gradient(); */
+}
+.head h1
+{
+    display: flex;
+    font-size: 68px;
+    font-family: "Oswald", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    justify-content: center;
+    padding: 5%;
+}
+.line h1
+{
+	margin-top: -8%;
+	font-size: 68px;
+text-align: center;
+/* display: inline; */
+/* box-shadow: 0px 10px 15px black; */
+}
+
+
+
+.base .pic img
+{
+
+    /* position: absolute; */
+    height: 230px;
+    width: 230px;
+    display: flex;
+    
+    border-radius: 50%;
+    margin-bottom: 10%;
+    margin-left: 15%;
+    
+}
+
+.base .contentent
+{
+    /* padding: 5%; */
+    
+    text-align: center;
+    
+    font-family: 'Monstserrat',sans-serif;
+}
+.base .contentent h1
+{
+    
+    font-weight: 400;
+    font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    
+    line-height: 1.5em;
+}
+.contentent .subt
+{
+    font-size: 18px;
+    font-style: italic;
+    color: #838386
+}
+.icon
+{
+    margin-top: -25px;
+    margin-left: -16px;
+    /* margin-right: -8px; */
+    justify-content: center;
+    
+
+}
+.icon ul li{
+    list-style: none;
+    
+   line-height: 9em;
+    font-size: 1rem;
+    display: inline;
+    padding: 0 8%;
+    transform: translateY(40px);
+    transition: 0.5s;
+    
+    opacity: 0;
+}
+
+.base:hover .base .contentent .h1
+{
+    color: white;
+}
+.base:hover .icon ul li
+{
+    transform: translateY(0px);
+    transition-delay: calc(0.1s* var(--i));
+    opacity: 1;
+    
+    /* color: white !important; */
+}
+.icon ul li a{
+    text-decoration: none;
+    background-color: transparent;
+}
+
+
+.icon ul li a i{
+    color: #838386;;
+}
+@media(min-width:1700px)and( max-width:2000px)
+{
+    .base .pic img
+    {
+        height: 350px;
+        width: 305px;
+        border-radius: 50%;
+        margin-bottom: 15%;
+        /* align-items: left; */
+        /* margin-left: 0; */
+    }
+}
+@media(max-width:1200px)
+{
+    .box
+    {
+        padding: 0% 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .base
+    {
+        /* width: fit-content; */
+        margin: 1% 10%;
+        /* border: 2px solid red; */
+        /* justify-content: left; */
+        /* text-align: left !important; */
+       
+    }
+
+    .base .pic img
+    {
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+        margin-bottom: 15%;
+        /* align-items: left; */
+        margin-left: -27%;
+    }
+    .base .contentent
+{
+    /* padding-left: 38%; */
+    
+    text-align: center;
+    
+    font-family: 'Monstserrat',sans-serif;
+}
+.base .contentent h1
+{
+  
+    font-weight: 400;
+    margin: 0 10%;
+    font-size: 34px;
+    font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    
+    line-height: 1.5em;
+}
+.bl
+{
+    display: none;
+}
+
+.contentent .subt
+{
+    margin-top: 3%;
+    font-size: 18px;
+    font-style: italic;
+    color: #838386
+}
+.icon
+{
+    
+    margin-left: -50px;
+    margin-right: -50px;
+    justify-content: space-between;    
+
+}
+.icon ul li{
+    list-style: none;
+    
+    font-size: 1rem;
+    display: inline;
+    padding: 0 8%;
+}
+
+
+
+}
+
+@media(max-width:766px)
+{
+
+    .base .pic img
+    {
+        
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+        margin-bottom: 15%;
+        margin-left: -2%;
+        
+        justify-content: center;
+    }
+}
+@media(max-width: 580px)
+{
+
+    .base .pic img
+    {
+        height: 400px;
+        width: 400px;
+        justify-content: center;
+        margin: 10% 5%;
+       
+        
+
+    }
+}
+
+ 
 
 
 
@@ -16,17 +279,17 @@
 	box-sizing: border-box;
 }
 
-body{
+/* body{
 	height: 100PX;
 	font-family: "Raleway", sans-serif;
 	background: #fdfdfd;
-}
+} */
 
 .container{
 	margin: 30px;
 }
 
-.row{
+.row1{
 	width: 100%;
 	display: flex;
 	justify-content: center;
