@@ -159,9 +159,10 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
     padding-top: 3%;
     /* -webkit-animation: all 7s ease; */
     /* transform: perspective(20px); */
-   transition: 3s;
+   transition: 1s ease-out;
     margin-bottom: .5%;
-    transition: transform 300ms ease-in-out;
+    /* transition: transform 3s ease-in-out; */
+	transform:scale(.92);
     /* transform: scaleY(0); */
     /* transform-origin: top; */
     
