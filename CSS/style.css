@@ -726,6 +726,7 @@ button a
  }
  .image-layer .hello{
      display: flex;
+     flex-wrap: wrap;
      justify-content: center;
      align-items: center;
  }
@@ -753,11 +754,10 @@ button a
  
  .hello{
      display: flex;
+     flex-wrap: wrap;
      flex-direction: column;
      margin: 50px;
-     padding: 0;
- 
-     
+     padding: 0;    
  }
  
  
