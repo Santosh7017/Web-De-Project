@@ -157,12 +157,21 @@ label{
     .navbar{
         display: block
     }
-    label{
+    .line{
         display: block;
         font-size: 36px;
         position: absolute;
         top: 40px;
-        left: 150px;
+        left: 130px;
+        color: white;
+        cursor: pointer;
+    }
+    .cross{
+        display: none;
+        font-size: 37px;
+        position: absolute;
+        top: 40px;
+        left: 130px;
         color: white;
         cursor: pointer;
     }
@@ -183,6 +192,12 @@ label{
     }
     #click:checked ~ ul{
         left: 0%;
+    }
+    #click:checked ~.line{
+        display: none;
+    }
+    #click:checked ~.cross{
+        display: block;
     }
     .search-btn{
         position: absolute;
@@ -742,12 +757,15 @@ button a
 }
 .show-more{
     justify-content: center;
-    display: grid;
+    display: none;
     grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
     grid-gap: 10px;
 }
 .show-more img{
     width: 100%;
+}
+.box:hover{
+    opacity: 0.6;
 }
 
 /* Sectoin 6 : Growth Section : Vaibhav + Krishna */
