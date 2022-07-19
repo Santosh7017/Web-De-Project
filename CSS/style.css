@@ -726,6 +726,7 @@ button a
  }
  .image-layer .hello{
      display: flex;
+     flex-wrap: wrap;
      justify-content: center;
      align-items: center;
  }
@@ -753,53 +754,53 @@ button a
  
  .hello{
      display: flex;
+     flex-wrap: wrap;
      flex-direction: column;
      margin: 50px;
-     padding: 0;
- 
-     
+     padding: 0;    
  }
  
  
  
  /* Section 7 : Player Review : Riya */
  
- .wrapper{
-    background: linear-gradient(90deg, #b7afba 0% ,#3aaddf 100%);
-    min-height: 100vh;
-    margin: auto;
+
+.wrapper{
+    background: linear-gradient(rgb(15, 176, 230),rgb(91, 173, 173));
+    min-height: 82vh;
+   
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #fff;
-    
+    color: white;
 }
 .wrapper h1{
-    font-size: 60px;
-    font-weight: 500;
+    font-size: 40px;
+    font-weight: 300;
     margin-top: 30px;
     margin-bottom: 20px;
     text-align: center;
 }
-.wrapper h5{
+.wrapper h3{
     font-size: 20px;
     font-weight: 300;
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: 20px;
 }
 .cards{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1200px;
+    width: 100%;
     margin: auto;
+    padding: 1em;
 
 }
 .card{
-    width: 400px;
-    height: 250px;
+    width: 100%;
+    height: 100%;
     border-radius: 15px;
     margin: 7px;
     padding: 20px 30px;
@@ -807,48 +808,51 @@ button a
     background: rgba(255,255,255,0.2);
     box-shadow: 10px 20px 25px rgba(0, 0, 0, 0.2);
     transition: 0.5s;
+    flex-shrink: initial;
 
 }
 .card img{
-    height: 90px;
-    width: 90px;
-    border: 2px solid #f2f2f2;
+    height: 20px;
+    width: 20px;
+    border: 2px solid #e5dcdc;
     border-radius: 50%;
     position: absolute;
-    top: -40px;
-    left:20px;
+    top: 10px;
+    left:10px;
 
 }
 .card p{
-    font-size: 16px;
-    margin-top: 40px;
+   
+    font-size: 19px;
+    margin-top: 63px;
     margin-bottom: 25px;
 
 }
 .card h2{
-    font-weight: 500;
+    font-weight: 300;
     margin-bottom: 4px;
 
 
 }
 .card h4{
-    color: black;
-     font-weight: 400;
-     font-size: 16px;
+    color: rgb(18, 2, 2);
+     font-weight: 300;
+     font-size: 10px;
 }
 .card i{
-    font-size: 60px;
+    font-size: 30px;
     position: absolute;
     bottom: 20px;
     right: 25px;
-    color: #b2bec3;
+    color: #11232b;
 
 }
 .card:hover{
-    transform: scale(1.4);
-    color: #333;
-    background: #fff;
-    z-index: 100;
+    transform: scale(0.95);
+    color: rgb(230, 231, 228);
+    background: rgba(65, 64, 64, 0.779);
+    flex-shrink: initial;
+    
 
     
 }
@@ -858,28 +862,18 @@ button a
 
 
 
+@media(max-width: 630px) {
+    .cards{
+        width:100%;
+    flex-direction: column;
+    flex-shrink: initial;
+    flex-flow: column;
+    } 
+}
+    /* .card{
+        padding:50px ;
+    } */
 
-   @media(max-width:1050px)
-{
-    .cards{
-        width:100%;
-    flex-direction: column;
-    }
-    .card{
-        margin:40px 0;
-    }
-}
-@media(max-width:800px)
-{
-    .cards{
-        width:100%;
-    flex-direction: column;
-    }
-    .card{
-        margin:40px 0;
-    }
-}
- 
 
 /* section 8 : Contact  : Santosh  */
 
@@ -989,7 +983,7 @@ font-family: 'Poppins', sans-serif;
 
 .container .contactInfo ul.sci li{
     list-style: none;
-    margin: 25px;
+    margin: 10%;
    
     font-size: 1.2rem;
 }
@@ -1132,7 +1126,7 @@ color: rgb(88, 63, 3);
 
 .container .contactForm{
     position: relative;
-    width: calc(100% - 350px);
+    width: calc(100% - 1px);
     padding-left: 0;
     margin-left: 0;
     padding: 40px;
@@ -1158,6 +1152,10 @@ color: rgb(88, 63, 3);
         flex-direction: column-reverse;
         box-shadow: none;
     }
+    .container .contactInfo ul.sci li {
+        margin: 20%;
+        margin-right: 10px;
+    }
 
     .container .contactInfo{
         width: 100%;
@@ -1172,6 +1170,7 @@ color: rgb(88, 63, 3);
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-right: 4%;
     }
 
 

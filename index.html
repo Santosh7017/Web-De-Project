@@ -487,52 +487,48 @@
                     GROWTH RATE
                 </div>
             </div>
+            
         </div>
 
     </section>
 
     <!-- Section 7 : Player Review : Riya -->
     <section>
-    <div class="wrapper">
-        <h1> PLAYERS REVIEWS</h1>
-        <h3> what they say about us</h3>
-
-        <div class="cards">
-            <div class="card">
-                <img src="" alt="image3">
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil iure enim quis ut! </p>
-                <h2> Riya</h2>
-                <h4> web Developer</h4>
-                <i class="fa fa-quote-left"></i>
+      
+            <div class="wrapper">
+                <h1> PLAYERS REVIEWS</h1>
+                <h3> what they say about us</h3>
+        
+                <div class="cards">
+                    <div class="card">
+                        <img src="" alt="image3">
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil iure enim quis ut! </p>
+                        <h2> Riya</h2>
+                        <h4> web Developer</h4>
+                        <i class="fa fa-quote-left"></i>
+                    </div>
+        
+        
+                    <div class="card">
+                        <img src="" alt="image1">
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil iure enim quis ut! </p>
+                        <h2> priya</h2>
+                        <h4> web </h4>
+                        <i class="fa fa-quote-left"></i>
+                        
+                    </div>
+        
+                    <div class="card">
+                        <img src="" alt="image2">
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil iure enim quis ut! </p>
+                        <h2> piya</h2>
+                        <h4>  Developer</h4>
+                        <i class="fa fa-quote-left"></i>
+                    </div>
+                </div>
             </div>
-
-
-            <div class="card">
-                <img src="" alt="image1">
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil iure enim quis ut! </p>
-                <h2> priya</h2>
-                <h4> web </h4>
-                <i class="fa fa-quote-left"></i>
-            </div>
-
-            <div class="card">
-                <img src="" alt="image2">
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil iure enim quis ut! </p>
-                <h2> piya</h2>
-                <h4>  Developer</h4>
-                <i class="fa fa-quote-left"></i>
-            </div>
-            <div class="card">
-                <img src="" alt="image2">
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil iure enim quis ut! </p>
-                <h2> piya</h2>
-                <h4>  Developer</h4>
-                <i class="fa fa-quote-left"></i>
-            </div>
-          
-           
-        </div>
-    </div>
+            
+       
 </section>
 
     <!-- section 8 : Contact  : Santosh -->
@@ -580,31 +576,31 @@
                  
 
             </div>
-
+            <form action="" id="contactform">
         <div class="contactForm">
 
             <h2>Send a Message</h2>
             <div class="formBox">
                 <div class="inputBox w50">
-                    <input type="text" required>
+                    <input type="text" name="Fname" id="Fname" required>
                     <span>First name</span>
                 </div>
                 
                 <div class="inputBox w50">
-                    <input type="text" required>
+                    <input type="text" name="Lname" id="Lname" required>
                     <span>Last name</span>
                 </div>
                 <div class="inputBox w50">
-                    <input type="text" required>
+                    <input type="text" name="email" id="email" required>
                     <span>Email Address</span>
                 </div>
 
                 <div class="inputBox w50">
-                    <input type="number" required>
+                    <input type="number" name="phone" id="phone" pattern="[1-9]{1}[0-9]{9}" required>
                     <span>Mobile Number</span>
                 </div>
                 <div class="inputBox w100">
-                   <textarea required></textarea>
+                   <textarea  name="message" id="message" required></textarea>
                     <span>write your Message here</span>
                 </div>
                 <div class="inputBox w100">
@@ -616,6 +612,7 @@
 
 
         </div>
+    </form>
     </div>
 
 
@@ -623,13 +620,29 @@
 
     </section>
           
-	</body>
-</html>
+	
 
 
-       
-    
-    <script src="./js/script.js"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.0/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyAuX-qulFHRObm_XxFAPficsvcWI85d5uM",
+          authDomain: "contactform-a91e8.firebaseapp.com",
+          projectId: "contactform-a91e8",
+          storageBucket: "contactform-a91e8.appspot.com",
+          messagingSenderId: "672604654295",
+          appId: "1:672604654295:web:f03400c334210d7f3c3e92"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+      </script>
+      <script src="./JS/script.js"></script>
     
 </body>
 </html>
