@@ -1092,6 +1092,7 @@ color: rgb(88, 63, 3);
 }
 .container .contactForm  .formBox .inputBox input[type="submit"]:hover{
     background-color: rgb(151, 101, 0);
+    cursor: pointer;
 }
 
 

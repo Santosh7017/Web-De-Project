@@ -90,6 +90,7 @@ body {
 
 .skills .cardBox .card .content {
   padding: 0px 10px;
+  cursor: pointer;
 }
 
 .skills .cardBox .card h5 {
@@ -154,7 +155,7 @@ body {
 .fun-facts-section {
   position: relative;
   z-index: -1;
-  background: url("/images/banner_new.png") no-repeat center center/cover;
+  background: url("../images/banner_new.png") no-repeat center center/cover;
 }
 
 .image-layer {
@@ -227,4 +228,14 @@ body {
     pointer-events: none;
     transform: translate(-50%, -50%);
     /* transition: .1s; */
+}
+
+.skills .cardBox .card .content:hover ~ .cursor{
+    transform: translate(-50%, -50%) scale(1.5);
+    background-color: #ce1446;
+    opacity: .5;
+}
+
+.skills .cardBox .card .content:hover ~ .cursor2{
+    opacity: 0;
 }
