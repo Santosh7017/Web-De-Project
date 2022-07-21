@@ -590,9 +590,7 @@ hr
 .event-image:nth-child(2n)
  {
     flex-direction: row-reverse;
-    justify-content: right;
-    padding-left: 0;
-    padding-right: 4%;
+    /* justify-content: left; */
  }
 
 .event-image .game-block
@@ -603,8 +601,8 @@ hr
     background: rgba(248, 244, 243, 0.99);
     box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5);
     width: 500px;
-    margin-top: 60px;
-    padding-top: 5%;
+    /* margin-top: 60px; */
+    /* padding-top: 5%; */
 }
 .titlebox h3
 {
@@ -713,6 +711,7 @@ button a
 /* ========================================================================================== */
 @media(max-width :1000px)
 {
+    
     .event-image .image-block .image img
     {
         width: 100%;
