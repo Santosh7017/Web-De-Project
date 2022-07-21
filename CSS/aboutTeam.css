@@ -187,7 +187,7 @@ h1
     position: absolute;
     top:-10px;
     left:10px;
-    /* filter: grayscale(100%); */
+    filter: grayscale(100%);
     
 }
 .base:hover .bg
