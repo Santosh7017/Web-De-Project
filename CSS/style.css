@@ -446,7 +446,8 @@
 
 @media screen and (max-width:1124px){
     .index-post{
-        width: 562px; height: 728px;
+        width: 100%;
+         height: auto;
     }
 }
 @media screen and (max-width:562px){
