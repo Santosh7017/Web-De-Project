@@ -1,0 +1,219 @@
+.sec-4
+{
+    justify-content: center;
+    margin: 0 auto;
+    display: flex;
+    
+}
+.sec-4-title-div
+{
+    font-family: 'Monstserrat',sans-serif;
+    
+    margin-bottom: 50px;
+    text-align: center !important;
+}
+.sec-4-title-div h2{
+    font-size: 30px;
+    margin-bottom: 5px;
+    
+}
+.sec-4-title-div .subtitle1 {
+    color: #ed6221;
+    text-transform: uppercase;
+    line-height: 3em;
+}
+.text {
+    
+    display: flex;
+    padding-top: 20px !important;
+    padding-bottom: .5% !important;
+    padding: 10%;
+    font-size: auto;
+    line-height: 1.5em;
+    
+}
+
+hr
+{
+    align-items: center;
+    margin: 0 12.5% ;
+    width: 75%;
+    border: 3px solid rgb(67, 66, 66);
+    opacity: .5;
+    margin-bottom: 3%;
+    
+}
+/*=============================================================================*/
+/* .hello{
+    border: 2px solid black;
+} */
+.sec-4
+{
+    justify-content:center;
+    display: flex;
+}
+
+.event-image
+{
+    
+    /* border: 5px solid green; */
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: row-reverse; */
+    justify-content: left;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+    padding-left: 4%;
+    /* padding-top: 4%; */
+}
+
+.event-image:nth-child(2n)
+ {
+    flex-direction: row-reverse;
+    justify-content: right;
+    padding-left: 0;
+    padding-right: 4%;
+ }
+
+.event-image .game-block
+{
+    /* border: 2px solid red; */
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.99);
+    box-shadow: 0 30px 50px 2px rgba(0, 0, 0, 0.3);
+    width: 500px;
+    margin-top: 60px;
+    padding-top: 5%;
+}
+.titlebox h3
+{
+    font-size: 23px;  
+}
+.titlebox .event-capt
+{
+    padding: 2%;
+    color: rgb(194, 53, 53);
+    font-size: 15px;
+}
+
+.event-image .game-block .text
+{
+    text-align: center;
+    font-size: 20px;
+    margin: 10% 0px;
+}
+.event-image .game-block .info
+{
+    /* border: 2px solid yellow; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+.event-image .game-block .info .list
+{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 18px;
+    justify-content: center;
+    margin-bottom: 7%;
+}
+.list b{
+    font-size: 20px;
+}
+.list .txt
+{
+    margin-top: 5px;
+    color: rgb(224, 64, 64);
+}
+/*Buttons-------------------*/
+ 
+.event-image .buttons{
+    /* border: 2px solid orange; */
+    display: flex;  
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 7%;
+    cursor: pointer;
+}
+.event-image button
+{
+    background-color: indianred;
+    position: relative;
+    display: flex;
+    border-radius: 5px;
+    transition: 2ms;
+    box-shadow: 5px 5px 10px 0px grey;
+    margin: 10px;
+    padding: 1% 9%;
+    transition: 300ms ease-out;
+}
+ button:hover
+{
+ transform: translate(-2%,-2%);
+ background: linear-gradient(to right, #162b34, #122328, #010709);
+ 
+}
+button a
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-decoration: none;
+    color: white;
+    /* padding: 6% 2%; */
+    
+}
+.but-text
+{
+    /* padding: 1%; */
+    font-size: 20px;
+    font-family:'Arial Narrow', Arial, sans-serif;
+}
+/*=============================================================================*/
+.event-image .image-block
+{
+    /* border: 5px solid yellowgreen; */
+    display: flex;
+    flex-wrap: wrap;
+    transition: 6s;  
+} 
+.image-block .image
+{
+    overflow: hidden;
+    
+}
+.image-block img
+{
+    transition:all 1.5s ease-in-out;
+}
+.image-block img:hover
+{
+    position: relative;
+    transform: scale(1.1);
+} 
+
+/* ========================================================================================== */
+@media(max-width :1000px)
+{
+    .event-image .image-block .image img
+    {
+        width: 100%;
+        
+    }   
+    
+}
+@media(max-width :1305px)
+{
+    .event-image:nth-child👎
+    {
+        justify-content: center;
+        padding-left: 0;
+        padding-right: 0;
+        
+        /* */
+    }
+    
+}
