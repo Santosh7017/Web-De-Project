@@ -33,3 +33,20 @@ document.addEventListener('mousemove',function(e){
     cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX +
     "px; top: " + e.clientY + "px;";
 });
+
+// counting
+let valueDisplayes = document.querySelectorAll('.count-text');
+let interval = 1000;
+
+valueDisplayes.forEach(valueDisplay => {
+  let startValue = 0;
+  let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+  let duration = Math.floor(interval / endValue);
+  let counter = setInterval(function(){
+    startValue +=1;
+    valueDisplay.textContent = startValue;
+    if(startValue == endValue){
+      clearInterval(counter);
+    }
+  }, duration)
+});

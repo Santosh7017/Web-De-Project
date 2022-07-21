@@ -564,6 +564,24 @@ label{
     padding-left: 20px;
 }
 
+
+@media screen and (max-width:1124px){
+    .index-post{
+        width: 100%;
+         height: auto;
+    }
+}
+@media screen and (max-width:562px){
+    .index-post{
+        width: 281px; height: 1496px;
+    }
+}
+
+
+
+
+/* Section 4 : Tournaments : Srashti */
+
 .sec-4
 {
     justify-content: center;
@@ -1177,6 +1195,7 @@ color: rgb(88, 63, 3);
 }
 .container .contactForm  .formBox .inputBox input[type="submit"]:hover{
     background-color: rgb(151, 101, 0);
+    cursor: pointer;
 }
 
 
