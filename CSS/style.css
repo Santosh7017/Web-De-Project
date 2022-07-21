@@ -564,7 +564,7 @@ label{
     
     display: flex;
     padding-top: 20px !important;
-    padding-bottom: .5% !important;
+    padding-bottom: 20px !important;
     padding: 10%;
     font-size: auto;
     line-height: 1.5em;
@@ -578,7 +578,7 @@ hr
     width: 75%;
     border: 3px solid rgb(67, 66, 66);
     opacity: .5;
-    margin-bottom: 3%;
+    margin-bottom: 90px;
     
 }
 /*=============================================================================*/
@@ -593,7 +593,6 @@ hr
 
 .event-image
 {
-    
     /* border: 5px solid green; */
     display: flex;
     flex-wrap: wrap;
@@ -617,28 +616,28 @@ hr
     /* border: 2px solid red; */
     justify-content: center;
     align-items: center;
-    background: rgba(255, 255, 255, 0.99);
-    box-shadow: 0 30px 50px 2px rgba(0, 0, 0, 0.3);
+    background: rgba(248, 244, 243, 0.99);
+    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5);
     width: 500px;
     /* margin-top: 60px; */
     /* padding-top: 5%; */
 }
 .titlebox h3
 {
-    font-size: 23px;  
+    font-size: 20px;  
 }
 .titlebox .event-capt
 {
-    padding: 2%;
+    padding: 5%;
     color: rgb(194, 53, 53);
-    font-size: 15px;
+    font-size: 13px;
 }
 
 .event-image .game-block .text
 {
     text-align: center;
     font-size: 20px;
-    margin: 10% 0px;
+    margin: 50px 0px;
 }
 .event-image .game-block .info
 {
@@ -654,7 +653,7 @@ hr
     flex-wrap: wrap;
     font-size: 18px;
     justify-content: center;
-    margin-bottom: 7%;
+    margin-bottom: 25px;
 }
 .list b{
     font-size: 20px;
@@ -671,8 +670,7 @@ hr
     display: flex;  
     justify-content: center;
     flex-wrap: wrap;
-    margin-bottom: 7%;
-    cursor: pointer;
+    padding: 2%;
 }
 .event-image button
 {
@@ -683,13 +681,12 @@ hr
     transition: 2ms;
     box-shadow: 5px 5px 10px 0px grey;
     margin: 10px;
-    padding: 1% 9%;
-    transition: 300ms ease-out;
+    padding: 1% 8%;
 }
  button:hover
 {
- transform: translate(-2%,-2%);
- background: linear-gradient(to right, #162b34, #122328, #010709);
+ transform: translate(-5%,-5%);
+ background-color: rgb(225, 40, 40);
  
 }
 button a
@@ -718,12 +715,7 @@ button a
 } 
 .image-block .image
 {
-<<<<<<< HEAD
-    overflow: hidden;
-    
-=======
     overflow: hidden; 
->>>>>>> f4f4b40150aae6985ff5028006226eab2e9ad051
 }
 .image-block img
 {
@@ -752,18 +744,9 @@ button a
         justify-content: center;
         padding-left: 0;
         padding-right: 0;
-        
-        /* */
     }
-    
+
 }
-/* @media(max-width:1300px)
-{
-.event-image:nth-child(n)    
-{
-    flex-direction: column-reverse; 
-}
-} */
 
 /* Section 5 : Photo Gallery :  Mradul + Aryan */
 
