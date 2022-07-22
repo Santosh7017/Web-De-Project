@@ -351,12 +351,12 @@ label{
     }
 }
 #ulte-se{
-    animation: ulte-se 3.4s forwards;
+    animation: ulte-se 3s ease-out;
 }
 @keyframes ulte-se{
     0%{
         opacity: 0.3;
-        transform: translateX(-1000px);
+        transform: translateX(-500px);
     }
     100%{
         opacity: 1;
@@ -364,12 +364,12 @@ label{
     }
 }
 #sidhe-se{
-    animation: sidhe-se 3.4s forwards;
+    animation: sidhe-se 3s ease-out;
 }
 @keyframes sidhe-se{
     0%{
         opacity: 0.3;
-        transform: translateX(1000px);
+        transform: translateX(500px);
     }
     100%{
         opacity: 1;
@@ -572,8 +572,8 @@ label{
     }
 }
 @media screen and (max-width:562px){
-    .index-post{
-        width: 281px; height: 1496px;
+    .contener{
+        width: 281px;
     }
 }
 
