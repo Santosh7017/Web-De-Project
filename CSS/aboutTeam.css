@@ -295,7 +295,7 @@ h1
 }
 
 .image:hover img{
-	opacity: 1;
+	opacity: 0.3;
 }
 
 .image .details{
