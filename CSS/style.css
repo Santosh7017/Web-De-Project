@@ -1,8 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
+@import url("https://fonts.googleapis.com/css?family=Metal+Mania");
+
+@font-face {
+    font-family: 'Booter - Zero Zero';
+    src: url("../font/Booter\ -\ Zero\ Zero.woff") format('woff'), url("../font/Booter\ -\ Zero\ Zero.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth;   
+    font-family: Raleway;
 }
 
 /* Section 0  : Loading  : Mradul */
@@ -13,7 +23,6 @@
     display: none;
 }
 .loading-container{
-    /* border: 2px solid red; */
     background: #f9f6f6 no-repeat center center/cover;
     height: 100vh;
     display: flex;
@@ -22,7 +31,6 @@
     flex-direction: column;
 }
 .loading-container img{
-    /* border: 2px solid black; */
     width: 18%;
     animation: oppoide 3s infinite linear ;
 }
@@ -31,7 +39,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* border: 2px solid yellow; */
     margin-bottom: 100px;
 }
 @keyframes oppoide{
@@ -46,7 +53,6 @@
     }
 }
 .shadow{
-    /* border: 2px solid green; */
     border-radius: 50%;
     background-color: #3f4142;
     width: 30px;
@@ -131,7 +137,7 @@
     display: flex;
     align-items: center;
     /* justify-content: space-between; */
-    background: rgb(14, 11, 7, 1) no-repeat center center/cover;
+    background: #0F052F no-repeat center center/cover;
     position: sticky;
     top: 0;
     width: 100%;
@@ -247,6 +253,7 @@ label{
     color: white;
 }
 .firstsection{
+    overflow-wrap:normal;
     background: url('../images/Slideshow_1.png') no-repeat center center/cover;
     height: 100vh;
     animation: slideshow 20s infinite;
@@ -271,11 +278,13 @@ label{
 }
 .firstsection h1{
     /* border: 2px solid red; */
+    font-family: "Booter - Zero Zero";
     width: 600px;
-    color: rgb(0 255 43);
+    color: #6AD2A6;
+    font-weight: normal;
     text-align: center;
     text-shadow: 2px 0px white;
-    font-size: 3rem;
+    font-size: 7rem;
     animation: bada 3s forwards;
 }
 @keyframes bada{
@@ -313,6 +322,7 @@ label{
     font-size: 20px;
     color: #63D0A2;
     background-color: #0F052F;
+    cursor: pointer;
 }
 .btn:hover{
     background: #63D0A2;
@@ -351,12 +361,12 @@ label{
     }
 }
 #ulte-se{
-    animation: ulte-se 3.4s forwards;
+    animation: ulte-se 3s ease-out;
 }
 @keyframes ulte-se{
     0%{
         opacity: 0.3;
-        transform: translateX(-1000px);
+        transform: translateX(-500px);
     }
     100%{
         opacity: 1;
@@ -364,12 +374,12 @@ label{
     }
 }
 #sidhe-se{
-    animation: sidhe-se 3.4s forwards;
+    animation: sidhe-se 3s ease-out;
 }
 @keyframes sidhe-se{
     0%{
         opacity: 0.3;
-        transform: translateX(1000px);
+        transform: translateX(500px);
     }
     100%{
         opacity: 1;
@@ -572,8 +582,8 @@ label{
     }
 }
 @media screen and (max-width:562px){
-    .index-post{
-        width: 281px; height: 1496px;
+    .contener{
+        width: 281px;
     }
 }
 
