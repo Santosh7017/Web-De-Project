@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    
 </head>
 
 <body>
@@ -68,8 +71,8 @@
                 If you are looking for graphic design ideas and inspirations to build your next Gaming
                 website or app, you are at the right place.</p>
                 <div class="buttons">
-                    <button class="btn">Register</button>
-                    <button class="btn">Login</button>
+                    <button class="btn" id="ulte-se">Register</button>
+                    <button class="btn" id="sidhe-se">Login</button>
                 </div>
         </section>
 
@@ -567,7 +570,6 @@
 
         </section>
 
-        <!-- Section 7 : Player Review : Riya -->
 
         <!-- Section 7 : Player Review : Riya -->
     <section>
@@ -616,7 +618,7 @@
                         <h2> contact Info</h2>
                         <ul class="info">
                             <li>
-                                <span>  <img src="../images/lication.png" alt=""></span>
+                                <span>  <img src="./images/lication.png" alt=""></span>
                                 <span>
                                     GLA University Mathura
                                     <br>
@@ -624,14 +626,14 @@
 
                             </li>
                             <li>
-                                <span>  <img src="../images/mail.png" alt=""></i> </span>
+                                <span>  <img src="./images/mail.png" alt=""></i> </span>
                                 <span>
                                     abcd@gmail.com
                                 </span>
                                 
                             </li>
                             <li>
-                                <span>    <img src="../images/call.png" alt=""> </span>
+                                <span>    <img src="./images/call.png" alt=""> </span>
                                 <span>
                                     9999999999
                                 </span>
@@ -647,42 +649,48 @@
                     </ul>
                 
                 </div>
+                <form id="contactform">
                 <div class="contactForm">
 
                     <h2>Send a Message</h2>
                     <div class="formBox">
                         <div class="inputBox w50">
-                            <input type="text" required>
+                            <input type="text" id="Fname" required>
                             <span>First name</span>
                         </div>
                         
                         <div class="inputBox w50">
-                            <input type="text" required>
+                            <input type="text" id="Lname" required>
                             <span>Last name</span>
                         </div>
                         <div class="inputBox w50">
-                            <input type="text" required>
+                            <input type="text" id="email" required>
                             <span>Email Address</span>
                         </div>
 
                         <div class="inputBox w50">
-                            <input type="number" required>
+                            <input type="number" id="phone" required>
                             <span>Mobile Number</span>
                         </div>
                         <div class="inputBox w100">
-                        <textarea required></textarea>
+                        <textarea id="message" required></textarea>
                             <span>write your Message here</span>
                         </div>
                         <div class="inputBox w100">
-                            <input type="submit" value="send">
+                            <input type="submit" id="submit" value="send">
                         </div>
                     </div>
                 </div>
+            </form>
             </div>
         </section>
     </div>
     
-    <script  src="./JS/script.js"></script>
+
+          
+    <script type="module" src="./JS/script.js"></script>
+    
+
     <script src="./JS/loader.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
