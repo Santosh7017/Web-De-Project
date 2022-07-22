@@ -276,11 +276,31 @@ label{
     text-align: center;
     text-shadow: 2px 0px white;
     font-size: 3rem;
+    animation: bada 3s forwards;
+}
+@keyframes bada{
+    0%{
+        transform: scale(0.3);
+    }
+    100%{
+        transform: scale(1.0);
+    }
 }
 .firstsection p{
     color: white;
     text-align: center;
     font-size: 1.8rem;
+    animation: niche-se 3s forwards;
+}
+@keyframes niche-se{
+    0%{
+        opacity: 0.3;
+        transform: translateY(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
 .btn{
     border: none;
@@ -328,6 +348,32 @@ label{
     .btn{
         width: 90px;
         margin: 8px;
+    }
+}
+#ulte-se{
+    animation: ulte-se 3.4s forwards;
+}
+@keyframes ulte-se{
+    0%{
+        opacity: 0.3;
+        transform: translateX(-1000px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+#sidhe-se{
+    animation: sidhe-se 3.4s forwards;
+}
+@keyframes sidhe-se{
+    0%{
+        opacity: 0.3;
+        transform: translateX(1000px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
     }
 }
 
@@ -1149,6 +1195,7 @@ color: rgb(88, 63, 3);
 }
 .container .contactForm  .formBox .inputBox input[type="submit"]:hover{
     background-color: rgb(151, 101, 0);
+    cursor: pointer;
 }
 
 
