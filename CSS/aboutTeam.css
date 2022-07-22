@@ -206,11 +206,12 @@ h1
     text-align: center;
     color:grey;
     font-weight: 500;
+	/* font-style: italic; */
 }
 .icon
 {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 30px;
 	/* margin-bottom: 80%; */
     /* transition: 1s; */
 }
