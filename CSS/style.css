@@ -1014,7 +1014,7 @@ button a
 #contact{
 display: flex;
 justify-content: center;
-align-items: center;
+align-items: center;    
 min-height: 100vh;
 font-family: 'Poppins', sans-serif;
 background-image: linear-gradient(20deg, #a46e28 30%, rgb(255, 255, 255) 50% );
@@ -1237,7 +1237,8 @@ color: rgb(88, 63, 3);
 
 .container .contactForm{
     position: relative;
-    width: calc(100% - 350px);
+    /* width: calc(100% - 350px); */
+    width: calc(114% - 78px);
     padding-left: 0;
     margin-left: 0;
     padding: 40px;
