@@ -1,18 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
-@import url("https://fonts.googleapis.com/css?family=Metal+Mania");
-
-@font-face {
-    font-family: 'Booter - Zero Zero';
-    src: url("../font/Booter\ -\ Zero\ Zero.woff") format('woff'), url("../font/Booter\ -\ Zero\ Zero.woff2") format("woff2");
-    font-weight: normal;
-    font-style: normal;
-}
-
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family: Raleway;
+    scroll-behavior: smooth;   
 }
 
 /* Section 0  : Loading  : Mradul */
@@ -23,6 +13,7 @@
     display: none;
 }
 .loading-container{
+    /* border: 2px solid red; */
     background: #f9f6f6 no-repeat center center/cover;
     height: 100vh;
     display: flex;
@@ -31,6 +22,7 @@
     flex-direction: column;
 }
 .loading-container img{
+    /* border: 2px solid black; */
     width: 18%;
     animation: oppoide 3s infinite linear ;
 }
@@ -39,6 +31,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    /* border: 2px solid yellow; */
     margin-bottom: 100px;
 }
 @keyframes oppoide{
@@ -53,6 +46,7 @@
     }
 }
 .shadow{
+    /* border: 2px solid green; */
     border-radius: 50%;
     background-color: #3f4142;
     width: 30px;
@@ -137,7 +131,7 @@
     display: flex;
     align-items: center;
     /* justify-content: space-between; */
-    background: #0F052F no-repeat center center/cover;
+    background: rgb(14, 11, 7, 1) no-repeat center center/cover;
     position: sticky;
     top: 0;
     width: 100%;
@@ -253,7 +247,6 @@ label{
     color: white;
 }
 .firstsection{
-    overflow-wrap:normal;
     background: url('../images/Slideshow_1.png') no-repeat center center/cover;
     height: 100vh;
     animation: slideshow 20s infinite;
@@ -278,13 +271,11 @@ label{
 }
 .firstsection h1{
     /* border: 2px solid red; */
-    font-family: "Booter - Zero Zero";
     width: 600px;
-    color: #6AD2A6;
-    font-weight: normal;
+    color: rgb(0 255 43);
     text-align: center;
     text-shadow: 2px 0px white;
-    font-size: 7rem;
+    font-size: 3rem;
     animation: bada 3s forwards;
 }
 @keyframes bada{
@@ -322,7 +313,6 @@ label{
     font-size: 20px;
     color: #63D0A2;
     background-color: #0F052F;
-    cursor: pointer;
 }
 .btn:hover{
     background: #63D0A2;
@@ -408,7 +398,7 @@ label{
 	width: 40%;
 }
 .image-section img{
-	width: 90%;
+	width: 100%;
 	height: auto;
 }
 .title{
@@ -664,8 +654,7 @@ hr
 .event-image:nth-child(2n)
  {
     flex-direction: row-reverse;
-    justify-content: right;
-    padding-right: 4%;
+    /* justify-content: left; */
  }
 
 .event-image .game-block
@@ -727,8 +716,7 @@ hr
     display: flex;  
     justify-content: center;
     flex-wrap: wrap;
-    margin-bottom: 7%;
-    cursor: pointer;
+    padding: 2%;
 }
 .event-image button
 {
@@ -739,13 +727,12 @@ hr
     transition: 2ms;
     box-shadow: 5px 5px 10px 0px grey;
     margin: 10px;
-    padding: 1% 9%;
-    transition: 300ms ease-in-out;
+    padding: 1% 8%;
 }
  button:hover
 {
- /* transform: translateY(-2%,-2%); */
- background: linear-gradient(to right, #162b34, #122328, #010709);
+ transform: translate(-5%,-5%);
+ background-color: rgb(225, 40, 40);
  
 }
 button a
@@ -818,19 +805,71 @@ button a
     text-decoration:underline;
 }
 .pics{
-    justify-content: center;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
-    grid-gap: 10px;
+    margin: 30px;
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    /* grid-auto-rows:100px 300px; */
+    grid-gap:10px;
+    grid-auto-flow: dense;
 }
-.box .full-screen{
-    /* border: 2px solid red; */
-    text-align: center;
-    opacity: 0;
+
+.gallery-item{
+    width:100%;
+    height:100%;
 }
-.box img{
-    width: 100%;
+
+.gallery-item .image{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+
+.gallery-item .image img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    cursor:pointer;
+}
+ 
+.w-1{
+    grid-column: span 1;
+}
+.w-2{
+    grid-column: span 2;
+}
+.w-3{
+    grid-column: span 3;
+}
+.w-4{
+    grid-column: span 4;
+}
+.w-5{
+    grid-column: span 5;
+}
+
+.h-1{
+    grid-row: span 1;
+}
+.h-2{
+    grid-row: span 2;
+}
+.h-3{
+    grid-row: span 3;
+}
+.h-4{
+    grid-row: span 4;
+}
+.h-5{
+    grid-row: span 5;
+}
+
+@media screen and (max-width:500px){
+    .pics{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .w-1,.w-2,.w-3,.w-4,.w-5,.w-6{
+        grid-column:span 1;
+    }
 }
 #show{
     border: 4px solid black;
@@ -843,27 +882,6 @@ button a
     padding: 10px;
     margin-bottom: 20px;
     box-shadow: 2px 2px 8px 4px #7e7a7a;
-}
-.show-more{
-    justify-content: center;
-    display: none;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 400px));
-    grid-gap: 10px;
-}
-.show-more img{
-    width: 100%;
-}
-.box:hover img{
-    opacity: 0.3;
-}
-.box:hover .full-screen {
-    opacity: 1;
-	transform: translateY(-145px) ;
-}
-.full-screen .md-50 {
-	color: rgb(3, 3, 3);
-	font-size: 50px;
-    font-weight: 1000;
 }
 
 /* Sectoin 6 : Growth Section : Vaibhav + Krishna */
@@ -1017,7 +1035,7 @@ button a
 #contact{
 display: flex;
 justify-content: center;
-align-items: center;    
+align-items: center;
 min-height: 100vh;
 font-family: 'Poppins', sans-serif;
 background-image: linear-gradient(20deg, #a46e28 30%, rgb(255, 255, 255) 50% );
@@ -1240,8 +1258,7 @@ color: rgb(88, 63, 3);
 
 .container .contactForm{
     position: relative;
-    /* width: calc(100% - 350px); */
-    width: calc(114% - 78px);
+    width: calc(100% - 350px);
     padding-left: 0;
     margin-left: 0;
     padding: 40px;
