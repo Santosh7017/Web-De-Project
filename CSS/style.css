@@ -767,6 +767,7 @@ button a
 /*=============================================================================*/
 .event-image .image-block
 {
+    
     /* border: 5px solid yellowgreen; */
     display: flex;
     flex-wrap: wrap;
@@ -774,6 +775,7 @@ button a
 } 
 .image-block .image
 {
+    /* height: 400px; */
     overflow: hidden; 
 }
 .image-block img
