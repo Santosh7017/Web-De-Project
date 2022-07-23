@@ -6,12 +6,12 @@
 }
 
 /* Section 0  : Loading  : Mradul */
-/* .all{
+.all{
     display: none;
 }
 .oppoide-move{
     display: none;
-} */
+}
 .loading-container{
     /* border: 2px solid red; */
     background: #f9f6f6 no-repeat center center/cover;
