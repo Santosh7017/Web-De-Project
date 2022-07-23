@@ -351,7 +351,7 @@ label{
     }
 }
 #ulte-se{
-    animation: ulte-se 2s ease-out;
+    animation: ulte-se 3s ease-out;
 }
 @keyframes ulte-se{
     0%{
@@ -364,7 +364,7 @@ label{
     }
 }
 #sidhe-se{
-    animation: sidhe-se 2s ease-out;
+    animation: sidhe-se 3s ease-out;
 }
 @keyframes sidhe-se{
     0%{
@@ -805,7 +805,7 @@ button a
     text-decoration:underline;
 }
 .pics{
-    margin: 100px;
+    margin: 30px;
     display:grid;
     grid-template-columns: repeat(5,1fr);
     /* grid-auto-rows:100px 300px; */
