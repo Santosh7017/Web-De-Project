@@ -173,6 +173,8 @@ body {
 }
 
 .image-layer .hello .first-txt {
+  display: flex;
+  flex-direction: row;
   color: white;
   font-size: 50px;
   padding: 0px 0px 0px 0px;
@@ -183,7 +185,6 @@ body {
 
 .image-layer .hello .second-txt {
   color: #ff7600;
-  font-size: 3rem;
   font-size: 20px;
   margin-bottom: 30px;
 }
@@ -238,4 +239,36 @@ body {
 
 .skills .cardBox .card .content:hover ~ .cursor2{
     opacity: 0;
+}
+
+@media (max-width:440px){
+  .skills h2 {
+    font-size: 20px ;
+  }
+  .skills h1 {
+    font-size: 20px;
+  }
+
+}
+
+@media (max-width: 220px)  {
+  .skills h2 {
+    font-size: 20px ;
+  }
+  .skills h1 {
+    font-size: 15px;
+  }
+  .skills .cardBox .card img{
+    height: 150px;
+  }
+  .skills .cardBox .card .info{
+    font-size: 12px;
+  }
+
+  .image-layer .hello .first-txt {
+    font-size: 3rem;
+  }
+  .image-layer .hello .second-txt{
+    font-size: 15px;
+  }
 }
