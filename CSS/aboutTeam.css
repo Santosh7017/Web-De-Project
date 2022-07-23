@@ -1,3 +1,9 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 /* --------header ------------*/
 header
 {
@@ -12,30 +18,25 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
 /* --------about us---------- */
 
 .section-aniket{
-	width: 100%;
-	min-height:600px;
-	background-color: rgba(252, 251, 250, 0.927);
+	display: flex;
+	/* border: 2px solid red; */
+	background-color: rgba(226, 224, 221, 0.927);
+	justify-content: center;
+	flex-direction: column;
 }
 .container-aniket{
-	width: 80%;
-	display: block;
-	margin:auto;
-	padding-top: 100px;
-}
-.content-section{
-	float: left;
-	width: 55%;
+	/* border: 2px solid green; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 }
 .image-section{
-	float: right;
-	width: 45%;
-	/* margin-left: 5%; */
+	width: 100%;
+	margin-left: 5%;
 }
 .image-section img{
-	margin-top: 2%;
-	width: 80%;
-	height: 30%;
-	margin-left: 8%;
+	width: 60%;
 }
 .title h1{
 	text-transform: uppercase;
@@ -246,19 +247,6 @@ h1
 
 
 /* section 2 */
-
-
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
-/* body{
-	height: 100PX;
-	font-family: "Raleway", sans-serif;
-	background: #fdfdfd;
-} */
 
 .container{
 	margin: 30px;
