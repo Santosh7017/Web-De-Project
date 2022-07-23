@@ -6,12 +6,12 @@
 }
 
 /* Section 0  : Loading  : Mradul */
-.all{
+/* .all{
     display: none;
 }
 .oppoide-move{
     display: none;
-}
+} */
 .loading-container{
     /* border: 2px solid red; */
     background: #f9f6f6 no-repeat center center/cover;
@@ -805,19 +805,71 @@ button a
     text-decoration:underline;
 }
 .pics{
-    justify-content: center;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
-    grid-gap: 10px;
+    margin: 30px;
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    /* grid-auto-rows:100px 300px; */
+    grid-gap:10px;
+    grid-auto-flow: dense;
 }
-.box .full-screen{
-    /* border: 2px solid red; */
-    text-align: center;
-    opacity: 0;
+
+.gallery-item{
+    width:100%;
+    height:100%;
 }
-.box img{
-    width: 100%;
+
+.gallery-item .image{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+
+.gallery-item .image img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    cursor:pointer;
+}
+ 
+.w-1{
+    grid-column: span 1;
+}
+.w-2{
+    grid-column: span 2;
+}
+.w-3{
+    grid-column: span 3;
+}
+.w-4{
+    grid-column: span 4;
+}
+.w-5{
+    grid-column: span 5;
+}
+
+.h-1{
+    grid-row: span 1;
+}
+.h-2{
+    grid-row: span 2;
+}
+.h-3{
+    grid-row: span 3;
+}
+.h-4{
+    grid-row: span 4;
+}
+.h-5{
+    grid-row: span 5;
+}
+
+@media screen and (max-width:500px){
+    .pics{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .w-1,.w-2,.w-3,.w-4,.w-5,.w-6{
+        grid-column:span 1;
+    }
 }
 #show{
     border: 4px solid black;
@@ -830,27 +882,6 @@ button a
     padding: 10px;
     margin-bottom: 20px;
     box-shadow: 2px 2px 8px 4px #7e7a7a;
-}
-.show-more{
-    justify-content: center;
-    display: none;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 400px));
-    grid-gap: 10px;
-}
-.show-more img{
-    width: 100%;
-}
-.box:hover img{
-    opacity: 0.3;
-}
-.box:hover .full-screen {
-    opacity: 1;
-	transform: translateY(-145px) ;
-}
-.full-screen .md-50 {
-	color: rgb(3, 3, 3);
-	font-size: 50px;
-    font-weight: 1000;
 }
 
 /* Sectoin 6 : Growth Section : Vaibhav + Krishna */
