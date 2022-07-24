@@ -690,3 +690,61 @@ textarea.input {
 
   animation-name: fadeInUp;
 }
+
+
+
+
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;  
+  margin-top: calc(var(--bs-gutter-y) * -1);
+  margin-right: calc(var(--bs-gutter-x) * -.5);
+  margin-left: calc(var(--bs-gutter-x) * -.5);
+  justify-content: center;
+}
+.row > * {
+
+  flex-shrink: 0;
+  width: 70%;
+  max-width: 21rem;
+  padding-right: calc(var(--bs-gutter-x) * .5);
+  padding-left: calc(var(--bs-gutter-x) * .5);
+  margin-top: var(--bs-gutter-y);
+}
+
+.row-cols-auto > * {
+  flex: 0 0 auto;
+  width: auto;
+}
+.clearfix::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+ul {
+  padding-left: 2rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+
+}
+/* 
+@media(max-width: 1245px){
+  .row *>{
+    max-width: 24rem;
+  }
+
+} */
+/* @media(min-width: 930px){
+  .row *>{
+    max-width: 25rem;
+  }
+
+} */
+@media screen and (min-width:878px) and (max-width:1178px) {
+  .row > *{
+    max-width: 24rem;
+  }
+}
