@@ -229,7 +229,7 @@ label{
 }
 
 .navlist{
-    /* float: right; */
+    float: right;
     margin-left: 0px;
     /* border: 2px solid red; */
     display: flex;
@@ -237,14 +237,14 @@ label{
     align-items: center;
 }
 .navlist li{
-    /* position: relative; */
-    /* display: inline-block; */
+    position: relative;
+    display: inline-block;
     list-style: none;
     padding: 30px 15px;
     text-transform: uppercase;
 }
 .navlist li a{
-    /* display: block; */
+    display: block;
     text-decoration: none;
     color: white;
     padding: 12px 13px;
@@ -259,7 +259,7 @@ label{
 
 .navlist ul{
     position: absolute;
-    top: 90px;
+    top: 80px;
     display: none;
 }
 
