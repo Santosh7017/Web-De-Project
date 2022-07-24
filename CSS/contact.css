@@ -87,50 +87,57 @@
   }
   
   .navlist{
-    /* float: right; */
+    float: right;
     margin-left: 0px;
     /* border: 2px solid red; */
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  .navlist li{
-    /* position: relative; */
-    /* display: inline-block; */
+}
+.navlist li{
+    position: relative;
+    display: inline-block;
     list-style: none;
     padding: 30px 15px;
     text-transform: uppercase;
-  }
-  .navlist li a{
-    /* display: block; */
+}
+.navlist li a{
+    display: block;
     text-decoration: none;
     color: white;
     padding: 12px 13px;
     font-size: 17px;
-  }
-  .navlist li a:hover, a.active{
+}
+.navlist li a:hover, a.active{
     color: #000000;
     border-radius: 5px;
     background-color: #1aeeef;
     box-shadow: 0 0 20px #1aeeef;
-  }
-  
-  .navlist ul{
+}
+
+.navlist ul{
     position: absolute;
-    top: 90px;
+    top: 80px;
     display: none;
-  }
-  
-  .navlist li:hover > ul{
+}
+
+.navlist li:hover > ul{
     display: block;
     background-color: #000000;
-  }
-  
-  @media (max-width: 900px){
+}
+
+@media (max-width: 900px){
     .navlist li ul{
         display: none;
     }
-  }
+    .navlist li{
+        display: block;
+    }
+    .navlist li a:hover{
+        display: inline-block;
+    }
+    
+}
   
   .search-btn{
     position: absolute;

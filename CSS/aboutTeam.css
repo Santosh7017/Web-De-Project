@@ -106,13 +106,13 @@ label{
 }
 .navlist li{
     position: relative;
-    /* display: inline-block; */
+    display: inline-block;
     list-style: none;
     padding: 30px 15px;
     text-transform: uppercase;
 }
 .navlist li a{
-    /* display: block; */
+    display: block;
     text-decoration: none;
     color: white;
     padding: 12px 13px;
@@ -140,6 +140,13 @@ label{
     .navlist li ul{
         display: none;
     }
+    .navlist li{
+        display: block;
+    }
+    .navlist li a:hover{
+        display: inline-block;
+    }
+    
 }
 
 .search-btn{
