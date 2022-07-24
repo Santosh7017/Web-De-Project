@@ -390,41 +390,47 @@ label{
 
 /*  Section 2  : About + Icons : Aniket + Himanshu   */
 .section-aniket{
-	width: 100%;
-	min-height:600px;
-	background-color: rgba(252, 251, 250, 0.927);
+	display: flex;
+	/* border: 2px solid red; */
+	background-color: rgba(243, 242, 240, 0.927);
+	justify-content: center;
+	flex-direction: column;
 }
 .container-aniket{
-	width: 80%;
-	display: block;
-	margin:auto;
-	padding-top: 100px;
-}
-.content-section{
-	float: left;
-	width: 55%;
+	/* border: 2px solid green; */
+    padding-left: 80px;
+	display: flex;
+	justify-content:flex-start;
+	align-items: center;
+	/* text-align: center; */
 }
 .image-section{
-	float: right;
-	width: 40%;
+	width: 100%;
+	margin-left: 5%;
 }
 .image-section img{
-	width: 100%;
-	height: auto;
+	width: 60%;
 }
-.title{
+.title h1{
+    text-align: center;
 	text-transform: uppercase;
-	font-size: 28px;
+	font-size: 48px;
+}
+.title .lim
+{
+	margin-top: -4%;
+	/* margin-left: 2%; */
 }
 .content-section .content h3{
 	margin-top: 20px;
+	/* font-size: 18px; */
 	color:#fea900;
-	font-size: 21px;
+	font-size: 25px;
 }
 .content-section .content p{
 	margin-top: 10px;
 	font-family: sans-serif;
-	font-size: 18px;
+	font-size: 20px;
 	line-height: 1.5;
 }
 .content-section .content .button{
