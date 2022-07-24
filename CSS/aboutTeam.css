@@ -17,7 +17,7 @@
     height: 100%;
     text-transform: uppercase;
     opacity: 0.95;
-    z-index: 1000;
+    z-index: 1;
 }
 ::-webkit-scrollbar{
     width: 12px;
@@ -125,18 +125,13 @@ label{
     right: 20px;
     color: white;
 }
-header
+/* header
 {
-	height: 200px;
-	background: #0F2027; /* fallback for old browsers */
+	height: 350px;
+	background: #0F2027;  /* fallback for old browsers 
 	background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
-	margin-bottom: 10px;
-}
-header h1{
-	color: white;
-	position: relative;
-	top: 30%;
-}
+
+} */
 
 
 /* --------about us---------- */
@@ -262,24 +257,23 @@ header h1{
 
 .secone 
 {
-	display: flex;
-	flex-direction: column;
 	text-align: center;
+	margin: 2% 12%;
 }
 h1
 {
-	font-size: 50px;
     text-align: center;
     color: #222;
     padding-top: 20px;
-	padding-bottom: 30px;
 }
 .box
 {
-	/* border: 2px solid red; */
-	display: flex;
-	flex-wrap: wrap;
+	/* margin: 3% 10%; */
+    width: 100%;
+    height:100%;
+    /* margin: auto; */
     justify-content: center;
+    
 }
 .base
 {
@@ -289,10 +283,16 @@ h1
     height: 450px;
     background: transparent;
     border-radius: 10px;
+    /* margin-top: 70%; */
+    /* padding: 4% ; */
+    /* display: flex; */
+    /* margin-left: 70px; */
+    
 }
 .base:hover
 {
-    box-shadow: 0px ops 20px 1px #9592927a;; 
+    box-shadow: 0px ops 20px 1px #9592927a;;
+    
 }
 .bg
 {
@@ -331,6 +331,9 @@ h1
 .icon
 {
     text-align: center;
+    margin-top: 30px;
+	/* margin-bottom: 80%; */
+    /* transition: 1s; */
 }
 .icon ion-icon
 {

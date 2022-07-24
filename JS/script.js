@@ -31,14 +31,13 @@
 // }
 
 // readFormData();
+var fname, lname,email,phone,message;
 import {getDatabase, ref ,get,set, } from "https://www.gstatic.com/firebasejs/9.9.1/firebase-database.js";
 
 const db = getDatabase();  
 // send data to database
 
-function insertData(e){
 
-}
 
 var Fname = document.getElementById('Fname');
 var Lname = document.getElementById('Lname');
@@ -47,9 +46,9 @@ var Email = document.getElementById('email');
 var Message = document.getElementById('message');
 
 
-document.getElementById('contactform').addEventListener("submit", submitForm);
+document.getElementById('contactform').addEventListener("submit", insertData);
 
-var fname, lname,email,phone,message;
+
 function submitForm(e) {
      e.preventDefault();
    
@@ -70,6 +69,24 @@ function submitForm(e) {
 
    }
 
+   function insertData(e){
+    e.preventDefault();
+    submitForm(e);
+  
+    set(ref(db, "data/"+ email),{
+      EMAIL:  email,
+      PHONE: phone,
+      FNAME: fname,
+      LNAME: lname,
+      MESSAGE: message
+  
+    }).then(()=>{
+      alert("Data stored succesfully");
+    }).catch((error)=>{alert("unsuccesfully",error)});  
+    document.getElementById('contactform').reset(); 
+    document.getElementById('contactform').reset();
+  
+  }
    
 
    // firebase project create
