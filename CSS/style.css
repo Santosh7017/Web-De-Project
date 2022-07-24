@@ -1065,7 +1065,7 @@ background-image: linear-gradient(20deg, #a46e28 30%, rgb(255, 255, 255) 50% );
 .container .contactInfo{
     position: absolute;
     top: 40px;
-    left: 20px;
+    left: 1px;
     width: 350px;
     height: calc(100% - 80px);
     background: #d3a32a;
@@ -1269,7 +1269,7 @@ color: rgb(88, 63, 3);
 
 .container .contactForm{
     position: relative;
-    width: calc(100% - 350px);
+    width: calc(100% - 1px);
     padding-left: 0;
     margin-left: 0;
     padding: 40px;
@@ -1344,3 +1344,6 @@ color: rgb(88, 63, 3);
     width: 100%;
  }
 }
+
+
+
