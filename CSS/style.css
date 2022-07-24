@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
+@import url("https://fonts.googleapis.com/css?family=Metal+Mania");
+
+@font-face {
+    font-family: 'Booter - Zero Zero';
+    src: url("../font/Booter\ -\ Zero\ Zero.woff") format('woff'), url("../font/Booter\ -\ Zero\ Zero.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -275,7 +285,8 @@ label{
     color: rgb(0 255 43);
     text-align: center;
     text-shadow: 2px 0px white;
-    font-size: 3rem;
+    font-size: 6rem;
+    font-family: "Booter - Zero Zero";
     animation: bada 3s forwards;
 }
 @keyframes bada{
