@@ -3,7 +3,6 @@
       padding: 0;
       box-sizing: border-box;
   }
-
   .navbar{
     display: flex;
     align-items: center;
@@ -16,14 +15,6 @@
     text-transform: uppercase;
     opacity: 0.95;
     z-index: 1;
-  }
-  ::-webkit-scrollbar{
-    width: 12px;
-  }
-  
-  ::-webkit-scrollbar-thumb{
-    background-color: #1aeeef;
-    border-radius: 6px;
   }
   label{
     display: none;
@@ -147,6 +138,30 @@
     color: white;
   }
 
+
+
+.navlist ul{
+  position: absolute;
+  top: 90px;
+  display: none;
+}
+
+.navlist li:hover > ul{
+  display: block;
+  background-color: #000000;
+}
+
+@media (max-width: 900px){
+  .navlist li ul{
+      display: none;
+  }
+}
+
+.search-btn{
+  position: absolute;
+  right: 20px;
+  color: white;
+}
   .w3-image {
       max-width: 100%;
       height: 60vh ;
