@@ -108,7 +108,7 @@ label{
     position: relative;
     display: inline-block;
     list-style: none;
-    padding: 30px 15px;
+    padding: 15px 15px;
     text-transform: uppercase;
 }
 .navlist li a{
