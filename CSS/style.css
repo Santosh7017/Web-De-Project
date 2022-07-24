@@ -920,7 +920,7 @@ button a
  
  .image-layer .hello .first-txt{
      color: white;
-     font-size: 50px;
+     font-size: 42px;
      padding: 0px 0px 0px 0px;
      margin: 10px 50px 10px 60px;
      font-style: italic;
@@ -934,9 +934,9 @@ button a
      font-size: 20px;
      margin-bottom: 30px;
  } 
- .material-symbols-outlined.md-80{
+ .material-symbols-outlined.md-70{
      color: white;
-     font-size: 80px;
+     font-size: 70px;
  }
  
  .hello{
