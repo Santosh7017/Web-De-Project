@@ -390,48 +390,42 @@ label{
 
 /*  Section 2  : About + Icons : Aniket + Himanshu   */
 .section-aniket{
-	display: flex;
-	/* border: 2px solid red; */
-	background-color: rgba(243, 242, 240, 0.927);
-	justify-content: center;
-	flex-direction: column;
+	width: 100%;
+	min-height:600px;
+	background-color: rgba(252, 251, 250, 0.927);
 }
 .container-aniket{
-	/* border: 2px solid green; */
-    padding-left: 80px;
-	display: flex;
-	justify-content:flex-start;
-	align-items: center;
-	/* text-align: center; */
+	width: 80%;
+	display: block;
+	margin:auto;
+	padding-top: 100px;
+}
+.content-section{
+	float: left;
+	width: 55%;
 }
 .image-section{
-	width: 100%;
-	margin-left: 5%;
+	float: right;
+	width: 40%;
 }
 .image-section img{
-	width: 60%;
+	width: 90%;
+	height: auto;
+    margin-top: -10%;
 }
-.title h1{
-    margin-top: 50px;
-    text-align: center;
+.title{
 	text-transform: uppercase;
-	font-size: 48px;
-}
-.title .lim
-{
-	margin-top: -4%;
-	/* margin-left: 2%; */
+	font-size: 28px;
 }
 .content-section .content h3{
 	margin-top: 20px;
-	/* font-size: 18px; */
 	color:#fea900;
-	font-size: 25px;
+	font-size: 21px;
 }
 .content-section .content p{
 	margin-top: 10px;
 	font-family: sans-serif;
-	font-size: 20px;
+	font-size: 18px;
 	line-height: 1.5;
 }
 .content-section .content .button{
@@ -461,28 +455,53 @@ label{
 	color:#3d3d3d;
 }
 @media screen and (max-width: 768px){
-
-	.container-aniket{
-	    width: 80%;
-	    display: flex;
-        flex-direction: column;
-	    padding-top:50px;
-    }
-    .image-section{
-        float:none;
-        width:90%;
-        
-    }
-    .image-section img{
-        width: 100%;
-        margin:auto;
-    }
+	.container{
+	width: 80%;
+	display: block;
+	margin:auto;
+	padding-top:50px;
+}
+.image-section{
+	float:none;
+	width:100%;
+	
+}
+.image-section img{
+	width: 100%;
+	height: auto;
+	display: block;
+	margin:auto;
+}
+.content-section{
+	float:none;
+	width:100%;
+	display: block;
+	margin:auto;
+}
+.title{
+	text-align: center;
+	font-size: 19px;
+}
+.content-section{
+	float:none;
+	width:100%;
+	display: block;
+	margin:auto;
+}
+.content-section .content .button{
+	text-align: center;
+}
+.content-section .content .button a{
+	padding:9px 30px;
+}
+.content-section .social{
+	text-align: center;
+}
 }
 
 /* Section 3 : Cards  :  Priyanshu */
 
-.index-post {
-    /* border: 2px solid red; */
+/* .index-post {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -568,10 +587,122 @@ label{
     }
 }
 
+ */
 
+ .enclose
+ {
+     display: flex;
+     justify-content: space-evenly;
+     margin: 2% 7%;
+ }
+ 
+ 
+ .base-card
+ {
+     max-width: 270px;
+     
+     color: var(--clr-neutral-100);
+     background-image: url("https://i.pinimg.com/originals/24/ad/8f/24ad8f850babcd6cc04daee07740299a.jpg");
+     color: white;
+     background-size: cover;
+     padding: 10rem 0 0;
+     border-radius: .5rem;
+     overflow: hidden;
+     /* transition:900ms; */
+ }
+ .base-card:hover
+ {
+     transform: scale(1.05);
+ }
+ .card-content
+ {   --padding:1.5rem;
+     padding: var(--padding);
+     /* background: rgba(0,0,0,0.2); */
+     background:linear-gradient(hsl(0 0% 0% / 0),hsl(20 0% 0% / 0.3) 20%, hsl(0 0% 0%/ 1));
+     /* transform: translateY(68%); */
+ }
+ @media(hover)
+ {
+     .card-content
+     {
+         transform: translateY(64%);
+         transition: transform 500ms ease;
+     }
+     .base-card:hover .card-content, .card:focus-within .card-content
+     {
+         transform: translateY(0);
+         transition-delay: 500ms;
+     }
+     .base-card:focus-within .card-content
+     {
+         transition-duration: 0ms;
+     }
+     .card-content > *:not(.card-title)
+     {
+         opacity: 0;
+         transition: opacity 500ms linear;
+     }
+     .base-card:hover .card-content > *
+     {
+         opacity: 1;
+     }
+ 
+ }
+ 
+ .card-title
+ {
+     position: relative;
+     width: max-content;
+     line-height: 1.8em;
+     
+ }
+ .card-title:after
+ {
+     content: "";
+     position: absolute;
+     height: 4px;
+     left: calc(var(--padding)*-1);
+     bottom: 0;
+     width:100%;
+     background: rgb(86, 175, 86);
+     transform: scale(0);
+     transform-origin: left;
+     transition: transform 500ms ease;
+ }
+ 
+ .base-card:hover .card-title::after
+ {
+     transform: scale(1);
+ }
+ .card-body
+ {
+     padding: 3% 1%;
+     color: rgba(255,255,255,0.85);
+ }
+ 
+ .btttn
+ {
+     cursor: pointer;
+     display: inline-block;
+     text-decoration: none;
+     color: black;
+     background-color: rgb(86, 175, 86);
+     padding: .5em 1.25em;
+     border-radius: .25rem;
+ }
+ .btttn:hover,.btttn:focus
+ {
+     background-color: white;
+ }
+ 
+ @media(max-width:1200px)
+ {
+     
+ }
 
 
 /* Section 4 : Tournaments : Srashti */
+
 
 .sec-4
 {
@@ -645,7 +776,8 @@ hr
 .event-image:nth-child(2n)
  {
     flex-direction: row-reverse;
-    /* justify-content: left; */
+    justify-content: right;
+    padding-right: 4%;
  }
 
 .event-image .game-block
@@ -657,17 +789,17 @@ hr
     box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5);
     width: 500px;
     /* margin-top: 60px; */
-    /* padding-top: 5%; */
+    padding-top: 5%;
 }
 .titlebox h3
 {
-    font-size: 20px;  
+    font-size: 22px;  
 }
 .titlebox .event-capt
 {
-    padding: 5%;
+    padding: 4%;
     color: rgb(194, 53, 53);
-    font-size: 13px;
+    font-size: 15px;
 }
 
 .event-image .game-block .text
@@ -700,6 +832,7 @@ hr
     margin-top: 5px;
     color: rgb(224, 64, 64);
 }
+
 /*Buttons-------------------*/
  
 .event-image .buttons{
@@ -707,7 +840,8 @@ hr
     display: flex;  
     justify-content: center;
     flex-wrap: wrap;
-    padding: 2%;
+    margin-bottom: 7%;
+    cursor: pointer;
 }
 .event-image button
 {
@@ -718,12 +852,13 @@ hr
     transition: 2ms;
     box-shadow: 5px 5px 10px 0px grey;
     margin: 10px;
-    padding: 1% 8%;
+    padding: 1% 9%;
+    transition: 300ms ease-in-out;
 }
  button:hover
 {
- transform: translate(-5%,-5%);
- background-color: rgb(225, 40, 40);
+ /* transform: translateY(-2%,-2%); */
+ background: linear-gradient(to right, #162b34, #122328, #010709);
  
 }
 button a
@@ -745,7 +880,7 @@ button a
 /*=============================================================================*/
 .event-image .image-block
 {
-    
+    /* height: 300px; */
     /* border: 5px solid yellowgreen; */
     display: flex;
     flex-wrap: wrap;
@@ -753,11 +888,14 @@ button a
 } 
 .image-block .image
 {
-    /* height: 400px; */
+    height: 487px;
+    width: 632px;
     overflow: hidden; 
 }
 .image-block img
 {
+    height: 487px;
+    width: 632px;
     transition:all 1.5s ease-in-out;
 }
 .image-block img:hover

@@ -142,45 +142,45 @@ header h1{
 /* --------about us---------- */
 
 .section-aniket{
-	display: flex;
-	/* border: 2px solid red; */
-	background-color: rgba(226, 224, 221, 0.927);
-	justify-content: center;
-	flex-direction: column;
+	width: 100%;
+	min-height:600px;
+	background-color: rgba(252, 251, 250, 0.927);
 }
 .container-aniket{
-	/* border: 2px solid green; */
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
+	width: 80%;
+	display: block;
+	margin:auto;
+	padding-top: 100px;
+}
+.content-section{
+	float: left;
+	width: 55%;
 }
 .image-section{
-	width: 100%;
-	margin-left: 5%;
+	float: right;
+	width: 40%;
 }
 .image-section img{
-	width: 60%;
+	max-width: 80%;
+	height: auto;
+    /* margin-top: -10%; */
 }
-.title h1{
+.title{
 	text-transform: uppercase;
-	font-size: 48px;
-}
-.title .lim
-{
-	margin-top: -4%;
-	/* margin-left: 2%; */
+	font-size: 28px;
+	text-align: left;
+	
 }
 .content-section .content h3{
 	margin-top: 20px;
-	/* font-size: 18px; */
 	color:#fea900;
-	font-size: 25px;
+	font-size: 21px;
+	
 }
 .content-section .content p{
 	margin-top: 10px;
 	font-family: sans-serif;
-	font-size: 20px;
+	font-size: 18px;
 	line-height: 1.5;
 }
 .content-section .content .button{
@@ -252,10 +252,7 @@ header h1{
 .content-section .social{
 	text-align: center;
 }
-
 }
-
-
 
 
 /* Section 1  */
@@ -277,6 +274,7 @@ h1
 .box
 {
 	/* border: 2px solid red; */
+	margin: 1% 1%;
 	display: flex;
 	flex-wrap: wrap;
     justify-content: center;
@@ -289,6 +287,7 @@ h1
     height: 450px;
     background: transparent;
     border-radius: 10px;
+	
 }
 .base:hover
 {
@@ -316,20 +315,26 @@ h1
 }
 .base h3
 {
-    margin-top: 10%;
+    margin-bottom: 3%;
+	margin-top: 2%;
     text-align: center;
     color: #222;
     cursor: pointer;
+	font-weight: 650;
+	font-size: 20px ;
+    font-family: "Lato",  Roboto,'Monstserrat',  Arial, sans-serif;
 }
 .base h4
 {
     text-align: center;
     color:grey;
     font-weight: 500;
+	font-family: 'Monstserrat',sans-serif;;
 	/* font-style: italic; */
 }
 .icon
 {
+	margin-top: 10%;
     text-align: center;
 }
 .icon ion-icon
