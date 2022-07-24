@@ -413,41 +413,48 @@ label{
 
 /*  Section 2  : About + Icons : Aniket + Himanshu   */
 .section-aniket{
-	width: 100%;
-	min-height:600px;
-	background-color: rgba(252, 251, 250, 0.927);
+	display: flex;
+	/* border: 2px solid red; */
+	background-color: rgba(243, 242, 240, 0.927);
+	justify-content: center;
+	flex-direction: column;
 }
 .container-aniket{
-	width: 80%;
-	display: block;
-	margin:auto;
-	padding-top: 100px;
-}
-.content-section{
-	float: left;
-	width: 55%;
+	/* border: 2px solid green; */
+    padding-left: 80px;
+	display: flex;
+	justify-content:flex-start;
+	align-items: center;
+	/* text-align: center; */
 }
 .image-section{
-	float: right;
-	width: 40%;
+	width: 100%;
+	margin-left: 5%;
 }
 .image-section img{
-	width: 100%;
-	height: auto;
+	width: 60%;
 }
-.title{
+.title h1{
+    margin-top: 50px;
+    text-align: center;
 	text-transform: uppercase;
-	font-size: 28px;
+	font-size: 48px;
+}
+.title .lim
+{
+	margin-top: -4%;
+	/* margin-left: 2%; */
 }
 .content-section .content h3{
 	margin-top: 20px;
+	/* font-size: 18px; */
 	color:#fea900;
-	font-size: 21px;
+	font-size: 25px;
 }
 .content-section .content p{
 	margin-top: 10px;
 	font-family: sans-serif;
-	font-size: 18px;
+	font-size: 20px;
 	line-height: 1.5;
 }
 .content-section .content .button{
@@ -477,49 +484,22 @@ label{
 	color:#3d3d3d;
 }
 @media screen and (max-width: 768px){
-	.container{
-	width: 80%;
-	display: block;
-	margin:auto;
-	padding-top:50px;
-}
-.image-section{
-	float:none;
-	width:100%;
-	
-}
-.image-section img{
-	width: 100%;
-	height: auto;
-	display: block;
-	margin:auto;
-}
-.content-section{
-	float:none;
-	width:100%;
-	display: block;
-	margin:auto;
-}
-.title{
-	text-align: center;
-	font-size: 19px;
-}
-.content-section{
-	float:none;
-	width:100%;
-	display: block;
-	margin:auto;
-}
-.content-section .content .button{
-	text-align: center;
-}
-.content-section .content .button a{
-	padding:9px 30px;
-}
-.content-section .social{
-	text-align: center;
-}
 
+	.container-aniket{
+	    width: 80%;
+	    display: flex;
+        flex-direction: column;
+	    padding-top:50px;
+    }
+    .image-section{
+        float:none;
+        width:90%;
+        
+    }
+    .image-section img{
+        width: 100%;
+        margin:auto;
+    }
 }
 
 /* Section 3 : Cards  :  Priyanshu */
@@ -1088,7 +1068,7 @@ background-image: linear-gradient(20deg, #a46e28 30%, rgb(255, 255, 255) 50% );
 .container .contactInfo{
     position: absolute;
     top: 40px;
-    left: 20px;
+    left: 1px;
     width: 350px;
     height: calc(100% - 80px);
     background: #d3a32a;
@@ -1292,7 +1272,7 @@ color: rgb(88, 63, 3);
 
 .container .contactForm{
     position: relative;
-    width: calc(100% - 350px);
+    width: calc(100% - 1px);
     padding-left: 0;
     margin-left: 0;
     padding: 40px;
@@ -1367,3 +1347,6 @@ color: rgb(88, 63, 3);
     width: 100%;
  }
 }
+
+
+
