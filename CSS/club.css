@@ -11,7 +11,7 @@
   scroll-behavior: smooth;
   /* background-color: #FAFAFA; */
 }
-.navbar{
+.navbar {
   display: flex;
   align-items: center;
   /* justify-content: space-between; */
@@ -24,115 +24,140 @@
   opacity: 0.95;
   z-index: 1;
 }
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 12px;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background-color: #1aeeef;
   border-radius: 6px;
 }
-label{
+label {
   display: none;
 }
-#click{
+#click {
   display: none;
 }
-@media (max-width: 900px){
-  .navbar{
-      display: block
+@media (max-width: 900px) {
+  .navbar {
+    display: block;
   }
-  .line{
-      display: block;
-      font-size: 36px;
-      position: absolute;
-      top: 40px;
-      left: 130px;
-      color: white;
-      cursor: pointer;
+  .line {
+    display: block;
+    font-size: 36px;
+    position: absolute;
+    top: 40px;
+    left: 130px;
+    color: white;
+    cursor: pointer;
   }
-  .cross{
-      display: none;
-      font-size: 37px;
-      position: absolute;
-      top: 40px;
-      left: 130px;
-      color: white;
-      cursor: pointer;
+  .cross {
+    display: none;
+    font-size: 37px;
+    position: absolute;
+    top: 40px;
+    left: 130px;
+    color: white;
+    cursor: pointer;
   }
-  .navbar ul{
-      position: fixed;
-      display: block;
-      text-align: center;
-      background: rgb(14, 11, 7, 1) no-repeat center center/cover;
-      top: 100px;
-      left: -100%;
-      height: 100vh;
-      width: 100%;
-      text-transform: uppercase;
-      transition: all 1s ease-in-out;
+  .navbar ul {
+    position: fixed;
+    display: block;
+    text-align: center;
+    background: rgb(14, 11, 7, 1) no-repeat center center/cover;
+    top: 100px;
+    left: -100%;
+    height: 100vh;
+    width: 100%;
+    text-transform: uppercase;
+    transition: all 1s ease-in-out;
   }
-  #click{
-      display: none;
+  #click {
+    display: none;
   }
-  #click:checked ~ ul{
-      left: 0%;
+  #click:checked ~ ul {
+    left: 0%;
   }
-  #click:checked ~.line{
-      display: none;
+  #click:checked ~ .line {
+    display: none;
   }
-  #click:checked ~.cross{
-      display: block;
+  #click:checked ~ .cross {
+    display: block;
   }
-  .search-btn{
-      position: absolute;
-      top: 40px;
-      right: 20px;
-      color: white;
+  .search-btn {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    color: white;
   }
 }
-.logo{
+.logo {
   /* border: 5px solid green; */
   display: inline-block;
   margin: 20px;
   width: 70px;
 }
-.logo img{
+.logo img {
   width: 80%;
 }
 
-.navlist{
+.navlist {
+  float: right;
   margin-left: 0px;
   /* border: 2px solid red; */
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.navlist li{
+.navlist li {
+  position: relative;
+  display: inline-block;
   list-style: none;
-  padding: 30px 15px;
+  padding: 15px 15px;
   text-transform: uppercase;
 }
-.navlist li a{
+.navlist li a {
+  display: block;
   text-decoration: none;
   color: white;
   padding: 12px 13px;
   font-size: 17px;
 }
-.navlist li a:hover, a.active{
+.navlist li a:hover,
+a.active {
   color: #000000;
   border-radius: 5px;
   background-color: #1aeeef;
   box-shadow: 0 0 20px #1aeeef;
 }
-.search-btn{
+
+.navlist ul {
+  position: absolute;
+  top: 80px;
+  display: none;
+}
+
+.navlist li:hover > ul {
+  display: block;
+  background-color: #000000;
+}
+
+@media (max-width: 900px) {
+  .navlist li ul {
+    display: none;
+  }
+  .navlist li {
+    display: block;
+  }
+  .navlist li a:hover {
+    display: inline-block;
+  }
+}
+
+.search-btn {
   position: absolute;
   right: 20px;
   color: white;
-}
-
-body {
-  background-color: #fafafa;
 }
 
 .skills {
@@ -321,73 +346,72 @@ body {
 }
 
 /* cursor */
-.cursor{
-    position: fixed;
-    
-    width: 30px;
-    height: 30px;
-    
-    border-radius: 50%;
-    border: 1px solid  #ce1446;
-    border-style: dashed;  
-    left: 0;
-    top: 0;
-    pointer-events: none;
-    transform: translate(-50%, -50%);
-    transition: .1s;
+.cursor {
+  position: fixed;
+
+  width: 30px;
+  height: 30px;
+
+  border-radius: 50%;
+  border: 1px solid #ce1446;
+  border-style: dashed;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: 0.1s;
 }
 
-.cursor2{
-    position: fixed;
-    width: 5px;
-    height: 5px;
-    background-color: #ce1446;
-    border-radius: 50%;
-    left: 0;
-    top: 0;
-    pointer-events: none;
-    transform: translate(-50%, -50%);
-    /* transition: .1s; */
+.cursor2 {
+  position: fixed;
+  width: 5px;
+  height: 5px;
+  background-color: #ce1446;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  /* transition: .1s; */
 }
 
-.skills .cardBox .card .content:hover ~ .cursor{
-    transform: translate(-50%, -50%) scale(1.5);
-    background-color: #ce1446;
-    opacity: .5;
+.skills .cardBox .card .content:hover ~ .cursor {
+  transform: translate(-50%, -50%) scale(1.5);
+  background-color: #ce1446;
+  opacity: 0.5;
 }
 
-.skills .cardBox .card .content:hover ~ .cursor2{
-    opacity: 0;
+.skills .cardBox .card .content:hover ~ .cursor2 {
+  opacity: 0;
 }
 
-@media (max-width:440px){
+@media (max-width: 440px) {
   .skills h2 {
-    font-size: 20px ;
+    font-size: 20px;
   }
   .skills h1 {
     font-size: 20px;
   }
-
 }
 
-@media (max-width: 220px)  {
+@media (max-width: 220px) {
   .skills h2 {
-    font-size: 20px ;
+    font-size: 20px;
   }
   .skills h1 {
     font-size: 15px;
   }
-  .skills .cardBox .card img{
+  .skills .cardBox .card img {
     height: 150px;
   }
-  .skills .cardBox .card .info{
+  .skills .cardBox .card .info {
     font-size: 12px;
   }
 
   .image-layer .hello .first-txt {
     font-size: 3rem;
   }
-  .image-layer .hello .second-txt{
+  .image-layer .hello .second-txt {
     font-size: 15px;
   }
 }
