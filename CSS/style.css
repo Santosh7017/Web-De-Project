@@ -257,7 +257,7 @@ label{
     color: white;
 }
 .firstsection{
-    background: url('../images/Slideshow_1.png') no-repeat center center/cover;
+    background: url('../images/gla1.png') no-repeat center center/cover;
     height: 100vh;
     animation: slideshow 20s infinite;
     animation-delay: 4s;
@@ -270,21 +270,21 @@ label{
 }
 @keyframes slideshow{
     25%{
-        background: url('../images/Slideshow_2.png') no-repeat center center/cover; 
+        background: url('../images/gla1.png') no-repeat center center/cover; 
     }
     50%{
-        background: url('../images/Slideshow_3.png') no-repeat center center/cover; 
+        background: url('https://scontent-del1-2.xx.fbcdn.net/v/t1.6435-9/204653561_3994612343921745_4031179303807126981_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=e3f864&_nc_ohc=T3Sy0HBEnyQAX8eO2tK&_nc_ht=scontent-del1-2.xx&oh=00_AT-vDn-n2_lQWevPqH69wHfdH-swaruLemO9ce_vw_sqig&oe=63027013') no-repeat center center/cover; 
     }
     75%{
-        background: url('../images/Slideshow_4.png') no-repeat center center/cover; 
+        background: url('../images/gla3.jpeg') no-repeat center center/cover; 
     }
 }
 .firstsection h1{
     /* border: 2px solid red; */
     width: 600px;
-    color: rgb(0 255 43);
+    color:white;
     text-align: center;
-    text-shadow: 2px 0px white;
+    text-shadow: 2px 0px rgb(10, 10, 10);
     font-size: 6rem;
     font-family: "Booter - Zero Zero";
     animation: bada 3s forwards;
@@ -315,19 +315,23 @@ label{
 }
 .btn{
     border: none;
-    box-shadow: 0 0 30px 5px rgb(73, 255, 1);
+    box-shadow: 0 0 20px 5px rgb(0, 10, 10);
     border-radius: 20px;
     margin: 30px;
     padding: 10px;
     width: 120px;
     height: 40px;
     font-size: 20px;
-    color: #63D0A2;
-    background-color: #0F052F;
+    color: white;
+    background:linear-gradient(hsl(0 0% 0% / 0),hsl(90 0% 0% / 0.7) 50%, hsl(10 0% 0%/ 1));
+    /* background-color: #0F052F; */
+    opacity: 0.9;
 }
 .btn:hover{
-    background: #63D0A2;
-    color: #0F052F;
+    /* background: grey; */
+    background:linear-gradient(grey(0 0% 0% / 0),hsl(90 0% 0% / 0.7) 50%, hsl(10 0% 0%/ 1));
+    /* opacity: 1; */
+    color: white;
 }
 @media (max-width: 800px){
     .firstsection{
