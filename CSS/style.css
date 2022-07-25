@@ -17,10 +17,10 @@
 
 /* Section 0  : Loading  : Mradul */
 .all{
-    /* display: none; */
+     display: none;
 }
 .oppoide-move{
-    /* display: none; */
+    display: none;
 }
 .loading-container{
     /* border: 2px solid red; */
@@ -421,6 +421,7 @@ label{
 
 /*  Section 2  : About + Icons : Aniket + Himanshu   */
 .section-aniket{
+    /* border: 2px solid red; */
 	width: 100%;
 	min-height:600px;
 	background-color: rgba(252, 251, 250, 0.927);
