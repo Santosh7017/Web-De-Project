@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@500&display=swap&effect=shadow-multiple|neon|fire-animation|outline|fire|anaglyph	');
+
+        .k_body{
+            text-align: center;
+            background-color: gold;
+            margin: 1%;
+        }
+        #k_head{
+            font-size:xx-large;
+            font-weight: bold;
+            color:mintcream;
+        }
+        .k_container{
+            width: 60%;
+            height: 100%;
+            margin: 0% 20% ;
+            display: grid;
+        }
+        
+        .k_nav-btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: rgb(255, 255,255,0.461);
+            transition: 1s;
+        }
+        .k_nav-btn:hover{
+            background-color: gray;
+            color: white;
+        }
+        .k_next{
+            position: sticky;
+            font-size: 25px;
+            font-weight: bold;
+            color: black;
+            left: 100%;
+        }
+        .k_prev{
+            position: absolute;
+            font-size: 25px;
+            font-weight: bold;
+            color: black;
+        }
+        .k_h2{
+            position: relative;
+            padding: 1%;
+            font-family: 'Poppins', sans-serif;
+        }
+        .k_box
+        {
+            /* position: absolute; */
+            width: 96%;
+            height: 25%;
+            /* border-top: 2px solid black; */
+            margin: 2% ;
+            box-shadow: 4px 6px;
+        }
+        .k_left{
+            width: 40%;
+            height: 100%;
+            /* border: 2px solid black; */
+            float: left;
+            background-color: rgb(247, 5, 45);
+
+        }
+        .k_right{
+            width: 60%;
+            height: 100%;
+            border: 2px solid black;
+            float: right;
+        }
+        .k_img{
+            display: flex;
+            justify-content:left;
+            float: left;
+            /* align-items:; */
+            width: 40%;
+            height: 100%;
+        }
+        .k_date{
+            /* position: absolute; */
+            font-size: 100%;
+        }
+        .k_container::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
