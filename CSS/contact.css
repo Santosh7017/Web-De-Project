@@ -3,7 +3,6 @@
       padding: 0;
       box-sizing: border-box;
   }
-
   .navbar{
     display: flex;
     align-items: center;
@@ -16,22 +15,14 @@
     text-transform: uppercase;
     opacity: 0.95;
     z-index: 1;
-}
-::-webkit-scrollbar{
-    width: 12px;
-}
-
-::-webkit-scrollbar-thumb{
-    background-color: #1aeeef;
-    border-radius: 6px;
-}
-label{
+  }
+  label{
     display: none;
-}
-#click{
+  }
+  #click{
     display: none;
-}
-@media (max-width: 900px){
+  }
+  @media (max-width: 900px){
     .navbar{
         display: block
     }
@@ -83,18 +74,20 @@ label{
         right: 20px;
         color: white;
     }
-}
-.logo{
+  
+  }
+  .logo{
     /* border: 5px solid green; */
     display: inline-block;
     margin: 20px;
     width: 70px;
-}
-.logo img{
+  }
+  .logo img{
     width: 80%;
-}
-
-.navlist{
+  }
+  
+  .navlist{
+    float: right;
     margin-left: 0px;
     /* border: 2px solid red; */
     display: flex;
@@ -102,11 +95,14 @@ label{
     align-items: center;
 }
 .navlist li{
+    position: relative;
+    display: inline-block;
     list-style: none;
-    padding: 30px 15px;
+    padding: 15px 15px;
     text-transform: uppercase;
 }
 .navlist li a{
+    display: block;
     text-decoration: none;
     color: white;
     padding: 12px 13px;
@@ -118,12 +114,61 @@ label{
     background-color: #1aeeef;
     box-shadow: 0 0 20px #1aeeef;
 }
-.search-btn{
+
+.navlist ul{
+    position: absolute;
+    top: 80px;
+    display: none;
+}
+
+.navlist li:hover > ul{
+    display: block;
+    background-color: #000000;
+}
+
+@media (max-width: 900px){
+    .navlist li ul{
+        display: none;
+    }
+    .navlist li{
+        display: block;
+    }
+    .navlist li a:hover{
+        display: inline-block;
+    }
+    
+}
+  
+  .search-btn{
     position: absolute;
     right: 20px;
     color: white;
+  }
+
+
+
+.navlist ul{
+  position: absolute;
+  top: 90px;
+  display: none;
 }
 
+.navlist li:hover > ul{
+  display: block;
+  background-color: #000000;
+}
+
+@media (max-width: 900px){
+  .navlist li ul{
+      display: none;
+  }
+}
+
+.search-btn{
+  position: absolute;
+  right: 20px;
+  color: white;
+}
   .w3-image {
       max-width: 100%;
       height: 60vh ;
@@ -152,6 +197,7 @@ label{
   }
 
   .contact-section .cards .inner {
+      cursor: pointer;
       position: relative;
       display: block;
       padding: 45px 20px;

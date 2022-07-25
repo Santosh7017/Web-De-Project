@@ -17,10 +17,10 @@
 
 /* Section 0  : Loading  : Mradul */
 .all{
-    display: none;
+    /* display: none; */
 }
 .oppoide-move{
-    display: none;
+    /* display: none; */
 }
 .loading-container{
     /* border: 2px solid red; */
@@ -216,6 +216,7 @@ label{
         right: 20px;
         color: white;
     }
+
 }
 .logo{
     /* border: 5px solid green; */
@@ -228,6 +229,7 @@ label{
 }
 
 .navlist{
+    float: right;
     margin-left: 0px;
     /* border: 2px solid red; */
     display: flex;
@@ -235,11 +237,14 @@ label{
     align-items: center;
 }
 .navlist li{
+    position: relative;
+    display: inline-block;
     list-style: none;
-    padding: 30px 15px;
+    padding: 15px 15px;
     text-transform: uppercase;
 }
 .navlist li a{
+    display: block;
     text-decoration: none;
     color: white;
     padding: 12px 13px;
@@ -251,6 +256,32 @@ label{
     background-color: #1aeeef;
     box-shadow: 0 0 20px #1aeeef;
 }
+
+.navlist ul{
+    position: absolute;
+    top: 80px;
+    display: none;
+}
+
+.navlist li:hover > ul{
+    display: block;
+    background-color: #000000;
+}
+
+@media (max-width: 900px){
+    .navlist li ul{
+        display: none;
+    }
+    .navlist li{
+        display: block;
+    }
+    .navlist li a:hover{
+        display: inline-block;
+    }
+    
+}
+
+
 .search-btn{
     position: absolute;
     right: 20px;
@@ -924,6 +955,22 @@ button a
     }
 
 }
+@media(max-width:650px)
+{
+    .image-block .image
+{
+    height: 300px;
+    width: auto;
+     
+}
+.image-block img
+{
+    height: 300px;
+    width: auto;
+    transition:all 1.5s ease-in-out;
+}
+}
+
 
 /* Section 5 : Photo Gallery :  Mradul + Aryan */
 
@@ -1040,7 +1087,7 @@ button a
  
  .image-layer .hello .first-txt{
      color: white;
-     font-size: 50px;
+     font-size: 42px;
      padding: 0px 0px 0px 0px;
      margin: 10px 50px 10px 60px;
      font-style: italic;
@@ -1054,9 +1101,9 @@ button a
      font-size: 20px;
      margin-bottom: 30px;
  } 
- .material-symbols-outlined.md-80{
+ .material-symbols-outlined.md-70{
      color: white;
-     font-size: 80px;
+     font-size: 70px;
  }
  
  .hello{
@@ -1476,7 +1523,8 @@ color: rgb(88, 63, 3);
  align-items: flex-end;
 }
 footer {
-  background-color: black;
+  background-color: rgb(0 0 0 /.85);
+  /* background-image: linear-gradient(45deg, black, grey); */
   color: wheat;
   font-size: 14px;
 }
@@ -1555,14 +1603,14 @@ footer * {
 }
 .row.secondary i {
   font-size: 1.8em;
-  color: pink;
+  color: white;
 }
 .row.secondary div {
   padding: 1em 0;
   width: 100%;
 }
 .row.secondary div:hover {
-  background-color: grey
+ 
 }
 .copyright {
   padding: 0.3em 1em;
