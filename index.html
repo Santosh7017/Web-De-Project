@@ -54,11 +54,21 @@
             </label>
             <ul class="navlist">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
+                <li><a href="#about">About</a>
+                    <ul>
+                        <li><a href="./pages/aboutTeam.html">About Team</a></li>
+                        <li><a href="#">About Us</a></li>
+                    </ul>
+                </li>
                 <li><a href="#game">Games</a></li>
                 <li><a href="#gallery">Gallery</a></li>
                 <li><a href="./pages/club.html">Categories</a></li>
-                <li><a href="./pages/contact.html">Contact Us</a></li>
+                <li><a href="#contact">Contact Us</a>
+                    <ul>
+                        <li><a href="./pages/contact.html">Contact Team</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </li>
             </ul>
             <span class="search-btn">
                 <span class="material-symbols-outlined md-36">
@@ -81,7 +91,7 @@
         </section>
 
         <!-- Section 2  : About + Icons : Aniket + Himanshu  -->
-        <section id="about" data-aos="fade-down">
+        <section id="about" >
             <div class="section-aniket">
                 <div class="container-aniket">
                     <div class="title">
@@ -597,69 +607,58 @@
             </div>
 
             <!--  Section 6 : fun facts Section : Vaibhav + Krishna -->
-            <section class="fun-facts-section" id="gallery">
+            <section class="fun-facts-section">
                 <div class="image-layer">
-                    <div class="hello">
-                        <div class="first-txt">
-                            <span class="count-text">130+</span>
-                        </div>
-                        <div class="second-txt">
-                            GAMES DEVELOPED
-                        </div>
-                        <div class="fun-facts-icon1">
-                            <span class="material-symbols-outlined md-80">
-                                stadia_controller
-                            </span>
-                        </div>
+                  <div class="hello">
+                    <div class="first-txt">
+                      <span class="count-text" data-val="130">00</span>
+                      <span>+</span>
                     </div>
-
-                    <div class="hello">
-                        <div class="fun-facts-icon1">
-                            <span class="material-symbols-outlined md-80">
-                                person_filled
-                            </span>
-                        </div>
-                        <div class="first-txt">
-                            <span class="count-text">62+</span>
-                        </div>
-
-                        <div class="second-txt">
-                            TEAM MEMBERS
-                        </div>
+                    <div class="second-txt">GAMES DEVELOPED</div>
+                    <div class="fun-facts-icon1">
+                      <span class="material-symbols-outlined md-70">
+                        stadia_controller
+                      </span>
                     </div>
-
-                    <div class="hello">
-                        <div class="first-txt">
-                            <span class="count-text">45M</span>
-                        </div>
-
-                        <div class="second-txt">
-                            GAMES DOWNLOADS
-                        </div>
-                        <div class="fun-facts-icon1">
-                            <span class="material-symbols-outlined md-80">
-                                file_download
-                            </span>
-                        </div>
+                  </div>
+          
+                  <div class="hello">
+                    <div class="fun-facts-icon1">
+                      <span class="material-symbols-outlined md-70"> person_filled </span>
                     </div>
-
-                    <div class="hello">
-                        <div class="fun-facts-icon1">
-                            <span class="material-symbols-outlined md-80">
-                                trending_up
-                            </span>
-                        </div>
-                        <div class="first-txt">
-                            <span class="count-text">78%</span>
-                        </div>
-
-                        <div class="second-txt">
-                            GROWTH RATE
-                        </div>
+                    <div class="first-txt">
+                      <span class="count-text" data-val="62">00</span>
+                      <span>+</span>
                     </div>
+          
+                    <div class="second-txt">TEAM MEMBERS</div>
+                  </div>
+          
+                  <div class="hello">
+                    <div class="first-txt">
+                      <span class="count-text" data-val="45">00</span>
+                      <span>M+</span>
+                    </div>
+          
+                    <div class="second-txt">GAMES DOWNLOADS</div>
+                    <div class="fun-facts-icon1">
+                      <span class="material-symbols-outlined md-70"> file_download </span>
+                    </div>
+                  </div>
+          
+                  <div class="hello">
+                    <div class="fun-facts-icon1">
+                      <span class="material-symbols-outlined md-70"> trending_up </span>
+                    </div>
+                    <div class="first-txt">
+                      <span class="count-text" data-val="78">00</span>
+                      <span>%</span>
+                    </div>
+          
+                    <div class="second-txt">GROWTH RATE</div>
+                  </div>
                 </div>
-
-            </section>
+              </section>
 
 
             <!-- Section 7 : Player Review : Riya -->
@@ -845,17 +844,13 @@
 
 
         <script src="./JS/loader.js"></script>
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-            AOS.init({
-                duration: 4000,
-            });
-        </script>
+       
         <script type="module" src="./JS/firebase.js"></script>
          <script type="module" src="./JS/script.js"></script>
         
        
         <script src="./JS/lightbox-plus-jquery.js"></script>
+        <script src="./JS/club.js"></script>
 </body>
 
 </html>
