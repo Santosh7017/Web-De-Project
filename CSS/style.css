@@ -608,7 +608,7 @@ label{
      padding: 10rem 0 0;
      border-radius: .5rem;
      overflow: hidden;
-     /* transition:900ms; */
+    
  }
  .base-card:hover
  {
@@ -617,9 +617,9 @@ label{
  .card-content
  {   --padding:1.5rem;
      padding: var(--padding);
-     /* background: rgba(0,0,0,0.2); */
+     
      background:linear-gradient(hsl(0 0% 0% / 0),hsl(20 0% 0% / 0.3) 20%, hsl(0 0% 0%/ 1));
-     /* transform: translateY(68%); */
+   
  }
  @media(hover)
  {
@@ -1508,6 +1508,7 @@ footer * {
   color: peru;
   font-size: 1.6em;
   white-space: nowrap;
+  margin-bottom: 26px;
 }
 .a1 {
   list-style: none;
@@ -1515,8 +1516,9 @@ footer * {
   flex-direction: column;
   padding: 0;
   margin: 0;
+  line-height: 1.4rem;
 }
-li:not(:first-child) {
+.a1 li:not(:first-child) {
   margin-top: 0.8em;
 }
 .a1 li a {
@@ -1531,18 +1533,18 @@ li:not(:first-child) {
   line-height: 2;
   margin: 0;
 }
-input,button {
+.footerInput,.footerButton {
   font-size: 1em;
   padding: 1em;
   width: 100%;
   border-radius: 5px;
   margin-bottom: 5px;
 }
-button {
+.footerButton{
   background-color: blue;
   color: white;
 }
-input,button :hover{
+.footerInput,.footerButton :hover{
   color: black;
 }
 
