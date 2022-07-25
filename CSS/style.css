@@ -955,6 +955,22 @@ button a
     }
 
 }
+@media(max-width:650px)
+{
+    .image-block .image
+{
+    height: 300px;
+    width: auto;
+     
+}
+.image-block img
+{
+    height: 300px;
+    width: auto;
+    transition:all 1.5s ease-in-out;
+}
+}
+
 
 /* Section 5 : Photo Gallery :  Mradul + Aryan */
 
