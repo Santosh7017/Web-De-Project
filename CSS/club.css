@@ -131,9 +131,9 @@ a.active {
   box-shadow: 0 0 20px #1aeeef;
 }
 
-.navlist ul {
+.navlist li ul {
   position: absolute;
-  top: 80px;
+  top: 60px;
   display: none;
 }
 
