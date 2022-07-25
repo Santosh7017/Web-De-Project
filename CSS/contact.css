@@ -77,7 +77,6 @@
   
   }
   .logo{
-    /* border: 5px solid green; */
     display: inline-block;
     margin: 20px;
     width: 70px;
@@ -89,7 +88,6 @@
   .navlist{
     float: right;
     margin-left: 0px;
-    /* border: 2px solid red; */
     display: flex;
     justify-content: center;
     align-items: center;
