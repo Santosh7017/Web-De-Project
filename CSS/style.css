@@ -1133,8 +1133,7 @@ button a
  
  .wrapper{
     background: linear-gradient(rgb(15, 176, 230),rgb(91, 173, 173));
-    min-height: 82vh;
-   
+    min-height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1160,8 +1159,8 @@ button a
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin: auto;
-    padding: 1em;
+    margin-top: 10px;
+    padding: 2rem;
 }
 .card{
     width: 100%;
@@ -1176,8 +1175,8 @@ button a
     flex-shrink: initial;
 }
 .card img{
-    height: 20px;
-    width: 20px;
+    height:70px;
+    width: 70px;
     border: 2px solid #e5dcdc;
     border-radius: 50%;
     position: absolute;
@@ -1220,7 +1219,6 @@ button a
     flex-flow: column;
     } 
 }
-
 /* section 8 : Contact  : Santosh  */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
