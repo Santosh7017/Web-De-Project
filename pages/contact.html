@@ -157,15 +157,17 @@
           <div class="info">
             <div class="information">
               <img src="/pages/contactImages/location.png" class="icon" alt="" />
-              <p>92 Cherry Drive Uniondale, NY 11553</p>
+              
+              
+              <p>GLA univeristy,17km Stone, NH-2, Mathura-Delhi Road Mathura, Chaumuhan, Uttar Pradesh 281406</p>
             </div>
             <div class="information">
               <img src="/pages/contactImages/email.png" class="icon" alt="" />
-              <p>lorem@ipsum.com</p>
+              <p>oppoide.2022@gmail.com</p>
             </div>
             <div class="information">
               <img src="/pages/contactImages/phone.png" class="icon" alt="" />
-              <p>123-456-789</p>
+              <p>9874764538</p>
             </div>
           </div>
 
@@ -192,7 +194,7 @@
           <span class="circle one"></span>
           <span class="circle two"></span>
 
-          <form action="index.html" autocomplete="off">
+          <form action="" autocomplete="off" id="contactform">
             <h3 class="title">Contact us</h3>
             <div class="input-container">
               <input type="text" name="name" id="UserName" class="input" />
@@ -210,11 +212,11 @@
               <span>Phone</span>
             </div>
             <div class="input-container textarea">
-              <textarea name="message"  class="input"></textarea>
+              <textarea name="message"  class="input" id="message"></textarea>
               <label for="">Message</label>
               <span>Message</span>
             </div>
-            <input type="submit" value="Send" class="btn" />
+            <input type="submit" id="submit"  class="btn" />
           </form>
         </div>
       
@@ -270,11 +272,12 @@
         <p>
             <i class="fas fa-phone"></i>
         </p>
-        <p>63987***</p>
+        <p>+91 9238483283</p>
       </div>
       <div>
         <p><i class="fas fa-envelope"></i></p>
-        <p>oppoide@gmail.com</p>
+        
+        <a href="maito:oppoide.2022@gmail.com" style="text-decoration:none ;">oppoide.2022@gmail.com</a>
       </div>
       <div>
         <p><i class="fas fa-map-marker-alt"></i></p>
@@ -282,8 +285,8 @@
       </div>
       <div>
           <p><i class="fab fa-twitter"></i></p>
-          <p>mail@twitter</p>
-          <a href="">mail@twitter</a>
+         
+          <a href=""style="text-decoration:none ;">mail@twitter</a>
         </div>
     </div>
     <div class="row copyright">
@@ -292,12 +295,86 @@
   </footer>
 
 
-  <script type="module" src="../JS/firebase.js"></script> 
-    <script type="module"  src="../JS/script.js"></script>
     
 
   <script src="../JS/contact.js"></script>
+  <script type="module">
+     
+ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.1/firebase-app.js";
+ 
+ 
+ const firebaseConfig = {
+   apiKey: "AIzaSyDeCTOZ3YX3lrNlLpfLXUgvMVQmK_DqpSM",
+   authDomain: "contactform-575d2.firebaseapp.com",
+   projectId: "contactform-575d2",
+   storageBucket: "contactform-575d2.appspot.com",
+   messagingSenderId: "386143471802",
+   appId: "1:386143471802:web:44d6a3f6e9e462e96cda83"
+ };
+
+
+ const app = initializeApp(firebaseConfig);
+  </script>
   
+
+<script type="module">
+    var username,email,phone,message;
+import {getDatabase, ref ,get,set, } from "https://www.gstatic.com/firebasejs/9.9.1/firebase-database.js";
+
+const db = getDatabase();  
+// send data to database
+
+
+
+var Uname = document.getElementById('UserName');
+var Phone = document.getElementById('phone');
+var Email = document.getElementById('email');
+var Message = document.getElementById('message');
+
+
+document.getElementById('contactform').addEventListener("submit", insertData);
+
+
+function submitForm(e) {
+     e.preventDefault();
+   
+     //   Get input Values
+     username = Uname.value;
+     email = Email.value;
+     phone = Phone.value;
+     message = Message.value;
+    
+    
+     console.log(Uname, phone, email, message);
+   
+     // saveContactInfo(name, email, message);
+   
+     // document.querySelector(".contact-form").reset();
+     document.getElementById('contactform').reset();
+
+   }
+
+   function insertData(e){
+    e.preventDefault();
+    submitForm(e);
+  
+    set(ref(db, "data/"+ email),{
+      EMAIL:  email,
+      PHONE: phone,
+      USERNAME: Uname,
+      MESSAGE: message
+  
+    }).then(()=>{
+      alert("your feedback stored succesfully");
+    }).catch((error)=>{alert("unsuccesfully",error)});  
+    document.getElementById('contactform').reset(); 
+    document.getElementById('contactform').reset();
+  
+  }
+   
+
+   // firebase project create
+</script>
 
 </body>
 
