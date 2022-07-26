@@ -848,6 +848,7 @@ footer * {
 .row.secondary i {
   font-size: 1.8em;
   color: white;
+  padding-bottom: 3%;
 }
 .row.secondary div {
   padding: 1em 0;
@@ -871,4 +872,18 @@ footer * {
   .row.secondary {
     flex-direction: row;
   }
+}
+
+.row  .phone:hover{
+  color: green;
+}
+
+.row  .email:hover{
+  color: yellow;
+}
+.row .location:hover{
+  color: red;
+}
+.row .twitter:hover{
+  color: cyan;
 }
