@@ -631,7 +631,9 @@ label{
      display: flex;
      flex-wrap: wrap;
      justify-content: center;
-     margin: 2% 0%;
+     /* align-items: center; */
+     /* max-width: 90%; */
+     margin: 2% 8.5%;
  }
  
  
@@ -640,13 +642,25 @@ label{
      max-width: 270px;
      margin: 20px;
      color: var(--clr-neutral-100);
-     background-image: url("https://i.pinimg.com/originals/24/ad/8f/24ad8f850babcd6cc04daee07740299a.jpg");
+     background-image: url("../images/car.jpg");
      color: white;
      background-size: cover;
      padding: 10rem 0 0;
      border-radius: .5rem;
      overflow: hidden;
     
+ }
+ .one 
+ {
+    background-image: url("../images/car1.jpg");
+ }
+ .two
+ {
+    background-image: url("../images/car2.jpg");
+ }
+ .three
+ {
+    background-image: url("../images/car3.png");
  }
  .base-card:hover
  {
