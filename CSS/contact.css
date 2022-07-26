@@ -16,7 +16,7 @@
     opacity: 0.95;
     z-index: 1;
   }
-  label{
+  nav label{
     display: none;
   }
   #click{
@@ -701,7 +701,7 @@ textarea.input {
 
 
 
-.row {
+.row-cards {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
   display: flex;
@@ -711,7 +711,7 @@ textarea.input {
   margin-left: calc(var(--bs-gutter-x) * -.5);
   justify-content: center;
 }
-.row > * {
+.row-cards > * {
 
   flex-shrink: 0;
   width: 70%;
@@ -751,7 +751,124 @@ ul {
 
 } */
 @media screen and (min-width:878px) and (max-width:1178px) {
-  .row > *{
+  .row-cards > *{
     max-width: 24rem;
+  }
+}
+
+
+
+
+.riya {
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+ align-items: flex-end;
+}
+footer {
+  background-color: rgb(0 0 0 /.85);
+  /* background-image: linear-gradient(45deg, black, grey); */
+  color: wheat;
+  font-size: 14px;
+}
+footer * {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+.row {
+  padding: 2em 1em;
+}
+.row.primary {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  align-items: stretch;
+}
+.column {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 2em;
+  min-height: 16em;
+}
+.a2 {
+  width: 100%;
+  text-align: left;
+  color: peru;
+  font-size: 1.6em;
+  white-space: nowrap;
+  margin-bottom: 26px;
+}
+.a1 {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  line-height: 1.4rem;
+}
+.a1 li:not(:first-child) {
+  margin-top: 0.8em;
+}
+.a1 li a {
+  color: blanchedalmond;
+  text-decoration: none;
+}
+.a1 li a:hover {
+  color: palevioletred;
+}
+.about p {
+  text-align: justify;
+  line-height: 2;
+  margin: 0;
+}
+.footerInput,.footerButton {
+  font-size: 1em;
+  padding: 1em;
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+.footerButton{
+  background-color: blue;
+  color: white;
+}
+.footerInput,.footerButton :hover{
+  color: black;
+}
+
+
+.row.secondary {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.row.secondary i {
+  font-size: 1.8em;
+  color: white;
+}
+.row.secondary div {
+  padding: 1em 0;
+  width: 100%;
+}
+.row.secondary div:hover {
+ 
+}
+.copyright {
+  padding: 0.3em 1em;
+  background-color: grey;
+}
+.copyright p {
+  font-size: 0.9em;
+  text-align: center;
+}
+@media screen and (max-width: 850px) {
+  .row.primary {
+    grid-template-columns: 1fr;
+  }
+  .row.secondary {
+    flex-direction: row;
   }
 }
