@@ -432,7 +432,7 @@ nav     label{
 .section-aniket{
     /* border: 2px solid red; */
 	width: 100%;
-	min-height:600px;
+	height: 100%;
 	background-color: rgba(238, 235, 231, 0.927);
 }
 .container-aniket{
@@ -451,7 +451,7 @@ nav     label{
 }
 .image-section video{
 	width: 100%;
-	height: 100%;
+	height: auto;
     margin-top: -10%;
 }
 .title{
@@ -496,48 +496,48 @@ nav     label{
 	color:#3d3d3d;
 }
 @media screen and (max-width: 768px){
-	.container{
-	width: 80%;
-	display: block;
-	margin:auto;
-	padding-top:50px;
-}
-.image-section{
-	float:none;
-	width:100%;
-	
-}
-.image-section img{
-	width: 100%;
-	height: auto;
-	display: block;
-	margin:auto;
-}
-.content-section{
-	float:none;
-	width:100%;
-	display: block;
-	margin:auto;
-}
-.title{
-	text-align: center;
-	font-size: 19px;
-}
-.content-section{
-	float:none;
-	width:100%;
-	display: block;
-	margin:auto;
-}
-.content-section .content .button{
-	text-align: center;
-}
-.content-section .content .button a{
-	padding:9px 30px;
-}
-.content-section .social{
-	text-align: center;
-}
+	.container-aniket{
+        /* border: 2px solid red; */
+        width: 80%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin:auto;
+        padding-top:50px;
+    }
+    .image-section{
+        width:100%;
+    }
+    .image-section video{
+        width: 100%;
+        height: auto;
+        margin-top: -10%;
+    }
+    .content-section{
+        float:none;
+        width:100%;
+        display: block;
+        margin:auto;
+    }
+    .title{
+        text-align: center;
+        font-size: 19px;
+    }
+    .content-section{
+        float:none;
+        width:100%;
+        display: block;
+        margin:auto;
+    }
+    .content-section .content .button{
+        text-align: center;
+    }
+    .content-section .content .button a{
+        padding:9px 30px;
+    }
+    .content-section .social{
+        text-align: center;
+    }
 }
 
 /* Section 3 : Cards  :  Priyanshu */
