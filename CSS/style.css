@@ -158,7 +158,7 @@
     background-color: #1aeeef;
     border-radius: 6px;
 }
-label{
+nav     label{
     display: none;
 }
 #click{
@@ -235,6 +235,7 @@ label{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 .navlist li{
     position: relative;
@@ -242,6 +243,7 @@ label{
     list-style: none;
     padding: 15px 15px;
     text-transform: uppercase;
+    
 }
 .navlist li a{
     border: 20%;
@@ -264,12 +266,14 @@ label{
     top: 60px;
     display: none;
     opacity: 0.9;
+    border-radius: 4%;
 }
 
 .navlist li:hover > ul{
     display: block;
     background-color: #000000;
 }
+
 
 @media (max-width: 900px){
     .navlist li ul{
@@ -633,7 +637,9 @@ label{
      display: flex;
      flex-wrap: wrap;
      justify-content: center;
-     margin: 2% 0%;
+     /* align-items: center; */
+     /* max-width: 90%; */
+     margin: 2% 0.5%;
  }
  
  
@@ -642,13 +648,25 @@ label{
      max-width: 270px;
      margin: 20px;
      color: var(--clr-neutral-100);
-     background-image: url("https://i.pinimg.com/originals/24/ad/8f/24ad8f850babcd6cc04daee07740299a.jpg");
+     background-image: url("../images/car.jpg");
      color: white;
      background-size: cover;
      padding: 10rem 0 0;
      border-radius: .5rem;
      overflow: hidden;
     
+ }
+ .one 
+ {
+    background-image: url("../images/car1.jpg");
+ }
+ .two
+ {
+    background-image: url("../images/car2.jpg");
+ }
+ .three
+ {
+    background-image: url("../images/car3.png");
  }
  .base-card:hover
  {
@@ -1121,8 +1139,7 @@ button a
  
  .wrapper{
     background: linear-gradient(rgb(15, 176, 230),rgb(91, 173, 173));
-    min-height: 82vh;
-   
+    min-height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1148,8 +1165,8 @@ button a
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin: auto;
-    padding: 1em;
+    margin-top: 10px;
+    padding: 2rem;
 }
 .card{
     width: 100%;
@@ -1164,8 +1181,8 @@ button a
     flex-shrink: initial;
 }
 .card img{
-    height: 20px;
-    width: 20px;
+    height:70px;
+    width: 70px;
     border: 2px solid #e5dcdc;
     border-radius: 50%;
     position: absolute;
@@ -1208,7 +1225,6 @@ button a
     flex-flow: column;
     } 
 }
-
 /* section 8 : Contact  : Santosh  */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
@@ -1608,6 +1624,7 @@ footer * {
 .row.secondary i {
   font-size: 1.8em;
   color: white;
+  padding-bottom: 3%;
 }
 .row.secondary div {
   padding: 1em 0;
@@ -1631,4 +1648,19 @@ footer * {
   .row.secondary {
     flex-direction: row;
   }
+}
+
+
+.row  .phone:hover{
+    color: green;
+}
+
+.row  .email:hover{
+    color: yellow;
+}
+.row .location:hover{
+    color: red;
+}
+.row .twitter:hover{
+    color: cyan;
 }

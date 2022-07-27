@@ -81,7 +81,7 @@ function submitForm(e) {
       MESSAGE: message
   
     }).then(()=>{
-      alert("Data stored succesfully");
+      alert("your feedback stored succesfully");
     }).catch((error)=>{alert("unsuccesfully",error)});  
     document.getElementById('contactform').reset(); 
     document.getElementById('contactform').reset();

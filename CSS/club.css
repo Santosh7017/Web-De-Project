@@ -11,7 +11,7 @@
   scroll-behavior: smooth;
   /* background-color: #FAFAFA; */
 }
-.navbar {
+.navbar{
   display: flex;
   align-items: center;
   /* justify-content: space-between; */
@@ -24,137 +24,145 @@
   opacity: 0.95;
   z-index: 1;
 }
-::-webkit-scrollbar {
+::-webkit-scrollbar{
   width: 12px;
 }
 
-::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb{
   background-color: #1aeeef;
   border-radius: 6px;
 }
-label {
+nav     label{
   display: none;
 }
-#click {
+#click{
   display: none;
 }
-@media (max-width: 900px) {
-  .navbar {
-    display: block;
+@media (max-width: 900px){
+  .navbar{
+      display: block
   }
-  .line {
-    display: block;
-    font-size: 36px;
-    position: absolute;
-    top: 40px;
-    left: 130px;
-    color: white;
-    cursor: pointer;
+  .line{
+      display: block;
+      font-size: 36px;
+      position: absolute;
+      top: 40px;
+      left: 130px;
+      color: white;
+      cursor: pointer;
   }
-  .cross {
-    display: none;
-    font-size: 37px;
-    position: absolute;
-    top: 40px;
-    left: 130px;
-    color: white;
-    cursor: pointer;
+  .cross{
+      display: none;
+      font-size: 37px;
+      position: absolute;
+      top: 40px;
+      left: 130px;
+      color: white;
+      cursor: pointer;
   }
-  .navbar ul {
-    position: fixed;
-    display: block;
-    text-align: center;
-    background: rgb(14, 11, 7, 1) no-repeat center center/cover;
-    top: 100px;
-    left: -100%;
-    height: 100vh;
-    width: 100%;
-    text-transform: uppercase;
-    transition: all 1s ease-in-out;
+  .navbar ul{
+      position: fixed;
+      display: block;
+      text-align: center;
+      background: rgb(14, 11, 7, 1) no-repeat center center/cover;
+      top: 100px;
+      left: -100%;
+      height: 100vh;
+      width: 100%;
+      text-transform: uppercase;
+      transition: all 1s ease-in-out;
   }
-  #click {
-    display: none;
+  #click{
+      display: none;
   }
-  #click:checked ~ ul {
-    left: 0%;
+  #click:checked ~ ul{
+      left: 0%;
   }
-  #click:checked ~ .line {
-    display: none;
+  #click:checked ~.line{
+      display: none;
   }
-  #click:checked ~ .cross {
-    display: block;
+  #click:checked ~.cross{
+      display: block;
   }
-  .search-btn {
-    position: absolute;
-    top: 40px;
-    right: 20px;
-    color: white;
+  .search-btn{
+      position: absolute;
+      top: 40px;
+      right: 20px;
+      color: white;
   }
+
 }
-.logo {
+.logo{
   /* border: 5px solid green; */
   display: inline-block;
   margin: 20px;
   width: 70px;
 }
-.logo img {
+.logo img{
   width: 80%;
 }
 
-.navlist {
+.navlist{
   float: right;
   margin-left: 0px;
   /* border: 2px solid red; */
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
-.navlist li {
+.navlist li{
   position: relative;
   display: inline-block;
   list-style: none;
   padding: 15px 15px;
   text-transform: uppercase;
+  
 }
-.navlist li a {
+.navlist li a{
   display: block;
   text-decoration: none;
   color: white;
   padding: 12px 13px;
   font-size: 17px;
 }
-.navlist li a:hover,
-a.active {
+.navlist li a:hover, a.active{
   color: #000000;
   border-radius: 5px;
   background-color: #1aeeef;
   box-shadow: 0 0 20px #1aeeef;
 }
 
-.navlist li ul {
+.navlist ul{
   position: absolute;
-  top: 60px;
+  top: 68px;
   display: none;
+  opacity: 0.9;
+  border-radius: 4%;
 }
 
-.navlist li:hover > ul {
+.navlist li:hover > ul{
   display: block;
   background-color: #000000;
+  padding-left: 0;
 }
 
-@media (max-width: 900px) {
-  .navlist li ul {
-    display: none;
+
+@media (max-width: 900px){
+  .navlist li ul{
+      display: none;
   }
-  .navlist li {
-    display: block;
+  .navlist li{
+      display: block;
   }
-  .navlist li a:hover {
-    display: inline-block;
+  .navlist li a:hover{
+      display: inline-block;
   }
+  
 }
 
-.search-btn {
+
+.search-btn{
   position: absolute;
   right: 20px;
   color: white;
@@ -414,4 +422,135 @@ a.active {
   .image-layer .hello .second-txt {
     font-size: 15px;
   }
+}
+
+/* footer */
+
+.riya {
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+ align-items: flex-end;
+}
+footer {
+  background-color: rgb(0 0 0 /.85);
+  /* background-image: linear-gradient(45deg, black, grey); */
+  color: wheat;
+  font-size: 14px;
+}
+footer * {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+.row {
+  padding: 2em 1em;
+}
+.row.primary {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  align-items: stretch;
+}
+.column {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 2em;
+  min-height: 16em;
+}
+.a2 {
+  width: 100%;
+  text-align: left;
+  color: peru;
+  font-size: 1.6em;
+  white-space: nowrap;
+  margin-bottom: 26px;
+}
+.a1 {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  line-height: 1.4rem;
+}
+.a1 li:not(:first-child) {
+  margin-top: 0.8em;
+}
+.a1 li a {
+  color: blanchedalmond;
+  text-decoration: none;
+}
+.a1 li a:hover {
+  color: palevioletred;
+}
+.about p {
+  text-align: justify;
+  line-height: 2;
+  margin: 0;
+}
+.footerInput,.footerButton {
+  font-size: 1em;
+  padding: 1em;
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+.footerButton{
+  background-color: blue;
+  color: white;
+}
+.footerInput,.footerButton :hover{
+  color: black;
+}
+
+
+.row.secondary {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.row.secondary i {
+  font-size: 1.8em;
+  color: white;
+  padding-bottom: 3%;
+}
+.row.secondary div {
+  padding: 1em 0;
+  width: 100%;
+}
+.row.secondary div:hover {
+ 
+}
+.copyright {
+  padding: 0.3em 1em;
+  background-color: grey;
+}
+.copyright p {
+  font-size: 0.9em;
+  text-align: center;
+}
+@media screen and (max-width: 850px) {
+  .row.primary {
+    grid-template-columns: 1fr;
+  }
+  .row.secondary {
+    flex-direction: row;
+  }
+}
+
+.row  .phone:hover{
+  color: green;
+}
+
+.row  .email:hover{
+  color: yellow;
+}
+.row .location:hover{
+  color: red;
+}
+.row .twitter:hover{
+  color: cyan;
 }
