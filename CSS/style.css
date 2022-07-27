@@ -244,6 +244,7 @@ label{
     text-transform: uppercase;
 }
 .navlist li a{
+    border: 20%;
     display: block;
     text-decoration: none;
     color: white;
@@ -258,6 +259,7 @@ label{
 }
 
 .navlist ul{
+    border: 10%;
     position: absolute;
     top: 60px;
     display: none;
