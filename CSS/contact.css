@@ -14,15 +14,23 @@
     height: 100%;
     text-transform: uppercase;
     opacity: 0.95;
-    z-index: 10000;
-  }
-  nav label{
+    z-index: 1;
+}
+::-webkit-scrollbar{
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #1aeeef;
+    border-radius: 6px;
+}
+nav     label{
     display: none;
-  }
-  #click{
+}
+#click{
     display: none;
-  }
-  @media (max-width: 980px){
+}
+@media (max-width: 900px){
     .navbar{
         display: block
     }
@@ -74,23 +82,26 @@
         right: 20px;
         color: white;
     }
-  
-  }
-  .logo{
+
+}
+.logo{
+    /* border: 5px solid green; */
     display: inline-block;
     margin: 20px;
     width: 70px;
-  }
-  .logo img{
+}
+.logo img{
     width: 80%;
-  }
-  
-  .navlist{
+}
+
+.navlist{
     float: right;
     margin-left: 0px;
+    /* border: 2px solid red; */
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 .navlist li{
     position: relative;
@@ -98,6 +109,7 @@
     list-style: none;
     padding: 15px 15px;
     text-transform: uppercase;
+    
 }
 .navlist li a{
     display: block;
@@ -115,14 +127,18 @@
 
 .navlist ul{
     position: absolute;
-    top: 60px;
+    top: 68px;
     display: none;
+    opacity: 0.9;
+    border-radius: 4%;
 }
 
 .navlist li:hover > ul{
     display: block;
     background-color: #000000;
+    padding-left: 0;
 }
+
 
 @media (max-width: 900px){
     .navlist li ul{
@@ -136,47 +152,13 @@
     }
     
 }
-  
-  .search-btn{
+
+
+.search-btn{
     position: absolute;
     right: 20px;
     color: white;
-  }
-
-
-
-.navlist ul{
-  position: absolute;
-  top: 90px;
-  display: none;
 }
-
-.navlist li:hover > ul{
-  display: block;
-  background-color: #000000;
-}
-
-@media (max-width: 900px){
-  .navlist li ul{
-      display: none;
-  }
-}
-
-.search-btn{
-  position: absolute;
-  right: 20px;
-  color: white;
-}
-  .w3-image {
-      max-width: 100%;
-      height: 60vh ;
-  }
-
-  .w3-xxlarge {
-      font-size: 72px !important;
-  }
-
-
   /* Contact cards */
 
 
@@ -848,6 +830,7 @@ footer * {
 .row.secondary i {
   font-size: 1.8em;
   color: white;
+  padding-bottom: 3%;
 }
 .row.secondary div {
   padding: 1em 0;
@@ -871,4 +854,18 @@ footer * {
   .row.secondary {
     flex-direction: row;
   }
+}
+
+.row  .phone:hover{
+  color: green;
+}
+
+.row  .email:hover{
+  color: yellow;
+}
+.row .location:hover{
+  color: red;
+}
+.row .twitter:hover{
+  color: cyan;
 }

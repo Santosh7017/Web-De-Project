@@ -17,7 +17,7 @@
     height: 100%;
     text-transform: uppercase;
     opacity: 0.95;
-    z-index: 1000;
+    z-index: 10;
 }
 ::-webkit-scrollbar{
     width: 12px;
@@ -27,7 +27,7 @@
     background-color: #1aeeef;
     border-radius: 6px;
 }
-label{
+nav     label{
     display: none;
 }
 #click{
@@ -85,6 +85,7 @@ label{
         right: 20px;
         color: white;
     }
+
 }
 .logo{
     /* border: 5px solid green; */
@@ -103,6 +104,7 @@ label{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 .navlist li{
     position: relative;
@@ -110,6 +112,7 @@ label{
     list-style: none;
     padding: 15px 15px;
     text-transform: uppercase;
+    
 }
 .navlist li a{
     display: block;
@@ -127,14 +130,18 @@ label{
 
 .navlist ul{
     position: absolute;
-    top: 60px;
+    top: 68px;
     display: none;
+    opacity: 0.9;
+    border-radius: 4%;
 }
 
 .navlist li:hover > ul{
     display: block;
     background-color: #000000;
+    padding-left: 0;
 }
+
 
 @media (max-width: 900px){
     .navlist li ul{
@@ -147,12 +154,6 @@ label{
         display: inline-block;
     }
     
-}
-
-.search-btn{
-    position: absolute;
-    right: 20px;
-    color: white;
 }
 header
 {
@@ -629,6 +630,7 @@ h1
   .row.secondary i {
 	font-size: 1.8em;
 	color: white;
+	padding-bottom: 3%;
   }
   .row.secondary div {
 	padding: 1em 0;
@@ -652,4 +654,18 @@ h1
 	.row.secondary {
 	  flex-direction: row;
 	}
+  }
+  
+  .row  .phone:hover{
+	color: green;
+  }
+  
+  .row  .email:hover{
+	color: yellow;
+  }
+  .row .location:hover{
+	color: red;
+  }
+  .row .twitter:hover{
+	color: cyan;
   }
