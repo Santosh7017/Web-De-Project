@@ -246,6 +246,7 @@ nav     label{
     
 }
 .navlist li a{
+    border: 20%;
     display: block;
     text-decoration: none;
     color: white;
@@ -260,6 +261,7 @@ nav     label{
 }
 
 .navlist ul{
+    border: 10%;
     position: absolute;
     top: 60px;
     display: none;
