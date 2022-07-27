@@ -434,11 +434,11 @@ nav     label{
 .section-aniket{
     /* border: 2px solid red; */
 	width: 100%;
-	min-height:600px;
-	background-color: rgba(252, 251, 250, 0.927);
+	min-height: 600px;
+	background-color: rgba(238, 235, 231, 0.927);
 }
 .container-aniket{
-	width: 80%;
+	width: 94%;
 	display: block;
 	margin:auto;
 	padding-top: 100px;
@@ -451,8 +451,8 @@ nav     label{
 	float: right;
 	width: 40%;
 }
-.image-section img{
-	width: 90%;
+.image-section video{
+	width: 100%;
 	height: auto;
     margin-top: -10%;
 }
@@ -498,48 +498,48 @@ nav     label{
 	color:#3d3d3d;
 }
 @media screen and (max-width: 768px){
-	.container{
-	width: 80%;
-	display: block;
-	margin:auto;
-	padding-top:50px;
-}
-.image-section{
-	float:none;
-	width:100%;
-	
-}
-.image-section img{
-	width: 100%;
-	height: auto;
-	display: block;
-	margin:auto;
-}
-.content-section{
-	float:none;
-	width:100%;
-	display: block;
-	margin:auto;
-}
-.title{
-	text-align: center;
-	font-size: 19px;
-}
-.content-section{
-	float:none;
-	width:100%;
-	display: block;
-	margin:auto;
-}
-.content-section .content .button{
-	text-align: center;
-}
-.content-section .content .button a{
-	padding:9px 30px;
-}
-.content-section .social{
-	text-align: center;
-}
+	.container-aniket{
+        /* border: 2px solid red; */
+        width: 80%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin:auto;
+        padding-top:50px;
+    }
+    .image-section{
+        width:100%;
+    }
+    .image-section video{
+        width: 100%;
+        height: auto;
+        margin-top: -10%;
+    }
+    .content-section{
+        float:none;
+        width:100%;
+        display: block;
+        margin:auto;
+    }
+    .title{
+        text-align: center;
+        font-size: 19px;
+    }
+    .content-section{
+        float:none;
+        width:100%;
+        display: block;
+        margin:auto;
+    }
+    .content-section .content .button{
+        text-align: center;
+    }
+    .content-section .content .button a{
+        padding:9px 30px;
+    }
+    .content-section .social{
+        text-align: center;
+    }
 }
 
 /* Section 3 : Cards  :  Priyanshu */
@@ -1005,7 +1005,8 @@ button a
     text-decoration:underline;
 }
 .pics{
-    margin: 100px;
+    /* margin: 100px; */
+    padding: 20px;
     display:grid;
     grid-template-columns: repeat(5,1fr);
     /* grid-auto-rows:100px 300px; */
@@ -1070,6 +1071,9 @@ button a
     .w-1,.w-2,.w-3,.w-4,.w-5,.w-6{
         grid-column:span 1;
     }
+}
+#show-more{
+    display: none;
 }
 #show{
     border: 4px solid black;
