@@ -433,10 +433,10 @@ nav     label{
     /* border: 2px solid red; */
 	width: 100%;
 	min-height:600px;
-	background-color: rgba(252, 251, 250, 0.927);
+	background-color: rgba(238, 235, 231, 0.927);
 }
 .container-aniket{
-	width: 80%;
+	width: 94%;
 	display: block;
 	margin:auto;
 	padding-top: 100px;
@@ -449,9 +449,9 @@ nav     label{
 	float: right;
 	width: 40%;
 }
-.image-section img{
-	width: 90%;
-	height: auto;
+.image-section video{
+	width: 100%;
+	height: 100%;
     margin-top: -10%;
 }
 .title{
@@ -1003,7 +1003,8 @@ button a
     text-decoration:underline;
 }
 .pics{
-    margin: 100px;
+    /* margin: 100px; */
+    padding: 20px;
     display:grid;
     grid-template-columns: repeat(5,1fr);
     /* grid-auto-rows:100px 300px; */
@@ -1068,6 +1069,9 @@ button a
     .w-1,.w-2,.w-3,.w-4,.w-5,.w-6{
         grid-column:span 1;
     }
+}
+#show-more{
+    display: none;
 }
 #show{
     border: 4px solid black;
