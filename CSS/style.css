@@ -158,7 +158,7 @@
     background-color: #1aeeef;
     border-radius: 6px;
 }
-label{
+nav     label{
     display: none;
 }
 #click{
@@ -235,6 +235,7 @@ label{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 .navlist li{
     position: relative;
@@ -242,6 +243,7 @@ label{
     list-style: none;
     padding: 15px 15px;
     text-transform: uppercase;
+    
 }
 .navlist li a{
     display: block;
@@ -262,12 +264,14 @@ label{
     top: 60px;
     display: none;
     opacity: 0.9;
+    border-radius: 4%;
 }
 
 .navlist li:hover > ul{
     display: block;
     background-color: #000000;
 }
+
 
 @media (max-width: 900px){
     .navlist li ul{
@@ -633,7 +637,7 @@ label{
      justify-content: center;
      /* align-items: center; */
      /* max-width: 90%; */
-     margin: 2% 8.5%;
+     margin: 2% 0.5%;
  }
  
  
@@ -660,7 +664,7 @@ label{
  }
  .three
  {
-    background-image: url("../images/car3.png");
+    background-image: url("../images/sport.jpeg");
  }
  .base-card:hover
  {
