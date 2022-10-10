@@ -311,7 +311,7 @@ nav     label{
         background: url('../images/gla1.png') no-repeat center center/cover; 
     }
     50%{
-        background: url('../images/GLA\ Front.jpg') no-repeat center center/cover; 
+        background: url('https://github.com/Santosh7017/Web-De-Project/blob/main/images/GLA%20Front.jpg?raw=true') no-repeat center center/cover; 
     }
     100%{
         background: url('../images/gla3.jpeg') no-repeat center center/cover; 
