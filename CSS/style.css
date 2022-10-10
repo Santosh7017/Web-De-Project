@@ -148,7 +148,7 @@
     height: 100%;
     text-transform: uppercase;
     opacity: 0.95;
-    z-index: 1;
+    z-index: 1000;
 }
 ::-webkit-scrollbar{
     width: 12px;

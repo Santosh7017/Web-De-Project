@@ -14,7 +14,7 @@
     height: 100%;
     text-transform: uppercase;
     opacity: 0.95;
-    z-index: 1;
+    z-index: 100;
 }
 ::-webkit-scrollbar{
     width: 12px;
@@ -306,7 +306,7 @@ textarea {
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
+  z-index: 10;
   overflow: hidden;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
