@@ -32,7 +32,8 @@
 
 // readFormData();
 var fname, lname,email,phone,message;
-import {getDatabase, ref ,get,set, } from "https://www.gstatic.com/firebasejs/9.9.1/firebase-database.js";
+// import {getDatabase, ref ,get,set, } from "https://www.gstatic.com/firebasejs/9.9.1/firebase-database.js";
+import {getDatabase, ref ,get,set, } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-database.js";
 
 const db = getDatabase();  
 // send data to database
@@ -73,7 +74,7 @@ function submitForm(e) {
     e.preventDefault();
     submitForm(e);
   
-    set(ref(db, "data/"+ email),{
+    set(ref(db, "data/", email),{
       EMAIL:  email,
       PHONE: phone,
       FNAME: fname,
